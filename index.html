@@ -1,13 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <link rel="stylesheet" href="./style.css">
     <title>Portfolio</title>
+    
 </head>
+
 <body>
-    <h1>hello i am harshal</h1>
+
+    <div class="nav">
+        <div id="nav-menu">
+            <nav>
+                <a class="logo" href="#">Harshal</a>
+                <ul id="sidemenu">
+                    <li><a class="nav-link home" href="#home">HOME</a></li>
+                    <li><a class="nav-link about" href="#about">ABOUT</a></li>
+                    <li><a class="nav-link skills" href="#skills">SKILLS</a></li>
+                    <li><a class="nav-link projects" href="#projects">PROJECTS</a></li>
+                    <li><a class="nav-link contact" href="#contact">CONTACT</a></li>
+                    <li id="resume-button-1"> 
+                        <a class="nav-link resume" id="resume-link-1" href="./images/Harshal-Wagh-Resume.pdf" download="Harshal-Wagh-Resume">RESUME</a>
+                    </li>
+                    
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+
+        </div>
+    </div>
     
 </body>
+
 </html>
+<script src="index.js"></script>
