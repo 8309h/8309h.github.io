@@ -1,13 +1,29 @@
-let sidemenu=document.getElementById("sidemenu");
+let header = document.querySelector("header");
+let menu = document.querySelector("#menu-icon");
+let navbar = document.querySelector(".navbar");
 
-function openmenu(){
-    sidemenu.style.right="0";
-}
-function closemenu(){
-    sidemenu.style.right="-200px";
-}
+window.addEventListener("scroll", () => {
+  header.classList.toggle("shadow", window.scrollY > 0);
+});
 
-document.getElementById('resume-link-1').addEventListener("click",()=>{
-    console.log("download")
-    window.location.assign("https://drive.google.com/file/d/1aLKITgYHPkZ0ekOaMVF_yrr-2oKSwxRb/view?usp=share_link", "_blank");
-  })
+menu.onclick = () => {
+  navbar.classList.toggle("active");
+};
+window.onscroll = () => {
+  navbar.classList.remove("active");
+};
+
+// Dark Mode / light mode
+let darkmode = document.querySelector("#darkmode");
+
+darkmode.onclick = () => {
+  if (darkmode.classList.contains("bx-moon")) {
+    darkmode.classList.replace("bx-moon", "bx-sun");
+    document.body.classList.add("active");
+  } else {
+    darkmode.classList.replace("bx-sun", "bx-moon");
+    document.body.classList.remove("active");
+  }
+};
+
+                                    
