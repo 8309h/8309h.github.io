@@ -14,13 +14,14 @@
 
 :root {
   --main-color: #033a80;
-  /* --bg-color: #fff; */
-  --bg-color : pink;
+  --bg-color: #fff;
+  /* --bg-color : pink; */
   --text-color: #0f0c27;
   --hover: hsl(260, 100%, 51%);
   --big-font: 3.2rem;
   --medium-font: 1.8rem;
   --p-font: 0.941rem;
+  --whitecolor:white;
 }
 
 section {
@@ -106,6 +107,7 @@ header.shadow {
 
 .navbar {
   display: flex;
+ 
 }
 
 .navbar a {
@@ -122,22 +124,28 @@ header.shadow {
 .navbar button {
   border: none;
   background-color: white;
+  /* background: transparent; */
   border-radius: 2px;
-  padding: 5px 5px ;
-  font-weight: bold;
-  font-size: 15px;
+  padding: 2px 5px ;
+  /* font-weight: bold; */
+  /* font-size: 15px; */
 
 }
 
 .navbar button:hover {
   background-color: red;
-  padding: 5px 5px ;
+  padding: 2px 5px ;
   cursor: pointer;
   color: white;
 }
 #resume-btn {
   background: #2768d9;
   color: white;
+}
+#resume-btn:hover {
+  background: hsl(260, 100%, 51%);
+  
+  cursor: pointer;
 }
 
 #menu-icon {
@@ -161,6 +169,10 @@ header.shadow {
   align-items: center;
   gap: 1rem;
   margin-top: 3%;
+  /* background-image: url("https://previews.123rf.com/images/anawat/anawat1801/anawat180100341/92806223-computer-notebook-on-wood-table.jpg"); */
+  background-image: url("https://images.unsplash.com/photo-1480506132288-68f7705954bd?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8cG9ydGZvbGlvJTIwYmFja2dyb3VuZHxlbnwwfHwwfHw%3D&w=1000&q=80");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .home-img {
@@ -171,6 +183,7 @@ header.shadow {
 .home-img img {
   width: 100%;
   border-radius: 50%;
+  border: 5px solid #033a99;
   /* background: none; */
   background-color: transparent;
   
@@ -179,6 +192,7 @@ header.shadow {
 .home-text span {
   font-size: var(--medium-font);
   font-weight: 500;
+  color: var(--whitecolor);
 }
 
 .home-text h1 {
@@ -188,24 +202,31 @@ header.shadow {
 .home-text h2 {
   font-size: 1.1rem;
   font-weight: 400;
+  color: var(--whitecolor);
 }
 
 .home-text p {
   font-size: var(--p-font);
   font-weight: 400;
   margin: 0.7rem 0 1rem;
+  color: var(--whitecolor);
 }
 
 .social {
   display: flex;
   flex-direction: column;
+
+  
 }
 
 .social a {
   margin-bottom: 1rem;
   font-size: 22px;
   color: var(--text-color);
+  color: white;
+  font-size: 2.0rem;
 }
+
 
 .social a:hover {
   color: var(--hover);
@@ -222,13 +243,20 @@ header.shadow {
 .btn:hover {
   background: var(--hover);
 }
-
+.about-section {
+   background-image: url("https://www.infosys.com/content/dam/infosys-web/en/careers/power-programmers/Images/power-programmers-mob.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+  
+}
 
 .about-container {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 1rem;
   margin-top: 2rem;
+ 
 }
 
 .about-img img {
@@ -245,6 +273,7 @@ header.shadow {
 .information {
   margin: 1rem 0 1.4rem;
 }
+
 
 .information .info-box {
   display: flex;
