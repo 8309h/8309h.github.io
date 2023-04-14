@@ -169,8 +169,8 @@ header.shadow {
   align-items: center;
   gap: 1rem;
   margin-top: 3%;
-  background-image: url("https://previews.123rf.com/images/anawat/anawat1801/anawat180100341/92806223-computer-notebook-on-wood-table.jpg");
-  /* background-image: url("https://images.unsplash.com/photo-1480506132288-68f7705954bd?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8cG9ydGZvbGlvJTIwYmFja2dyb3VuZHxlbnwwfHwwfHw%3D&w=1000&q=80"); */
+  /* background-image: url("https://previews.123rf.com/images/anawat/anawat1801/anawat180100341/92806223-computer-notebook-on-wood-table.jpg"); */
+  background-image: url("https://images.unsplash.com/photo-1480506132288-68f7705954bd?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8cG9ydGZvbGlvJTIwYmFja2dyb3VuZHxlbnwwfHwwfHw%3D&w=1000&q=80");
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -184,9 +184,9 @@ header.shadow {
 .home-img img {
   width: 100%;
   border-radius: 50%;
-  /* border: 5px solid hsl(281,34%,24%); */
-  /* background: none; */
-  background-color: transparent;
+  border: 5px solid hsl(281,34%,24%);
+  background: none;
+  /* background-color: transparent; */
   
 }
 
@@ -246,7 +246,7 @@ header.shadow {
   background: var(--hover);
 }
 .about-section {
-   background-image: url("https://www.infosys.com/content/dam/infosys-web/en/careers/power-programmers/Images/power-programmers-mob.jpg");
+   /* background-image: url("https://www.infosys.com/content/dam/infosys-web/en/careers/power-programmers/Images/power-programmers-mob.jpg"); */
     background-repeat: no-repeat;
     background-size: cover;
     color: white;
