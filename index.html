@@ -1,281 +1,656 @@
-
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- <meta
+      name="description"
+      content="Victor Eke is a Frontend Developer and technical writer based in Port Harcourt, Nigeria who is passionate about building web solutions and products around open source communities"
+    /> -->
+    <meta name="keywords" content="Full Stack Developer" />
+    <meta http-equiv="X-UA Compatible" content="ie=edge" />
+    <meta name="google-site-verification" content="IzcWMgn5Qjf-LCtA337KTGjivsf9bmod_1pZ-jxYQh8" />
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="./images/fav-icon.png" type="image/icon type">
+   <!-- Open Graph / Facebook -->
+<!-- <meta property="og:type" content="website">
+<meta property="og:url" content="https://www.victoreke.com/">
+<meta property="og:title" content="Victor Eke - Frontend developer">
+<meta property="og:description" content="Victor Eke is a Frontend Developer based in Port Harcourt, Nigeria who is passionate about building web solutions and products around open source communities.">
+<meta property="og:image" content="https://user-images.githubusercontent.com/62628408/152209979-0890fce1-2450-4e4a-b65c-7cd7fc4c3daf.png">
+<meta name="theme-color" content="#ffffff">
+<meta property="og:locale" content="en_US"> -->
+
+<!-- Twitter -->
+<!-- <meta property="twitter:card" content="summary_large_image">
+<meta property="twitter:url" content="https://www.victoreke.com/">
+<meta property="twitter:title" content="Victor Eke - Frontend developer">
+<meta property="twitter:description" content="Victor Eke is a Frontend Developer based in Port Harcourt, Nigeria who is passionate about building web solutions and products around open source communities.">
+<meta property="twitter:image" content="https://user-images.githubusercontent.com/62628408/152209979-0890fce1-2450-4e4a-b65c-7cd7fc4c3daf.png"> -->
+
+<!-- <meta name="title" content="Harshal - Full stack developer">
+    <title>Home page</title> -->
+    <link rel="icon" href="./img/favicon/profile-pic (1).png" type="image/icon type">
     <title>Harshal Wagh | Portfolio Website</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
-</head>
 
-<body>
-<!-- Navbar  Section Start -->
+    <!-- Style -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/global.css" />
 
-<header id="nav-menu">
-    <a href="" class="logo">
-        <div class="kodfun">
-            <span style="--x :1">HAR</span>
-            <span style="--x :1" id="harshal-s">S</span>
-            <span style="--x :1">HAL😎.</span>
-            
-        </div>
-    </a>
+    <!-- Favicon -->
+    <!-- <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./img/favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./img/favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./img/favicon/favicon-16x16.png"
+    />
+    <link
+      rel="icon"
+      sizes="192x192"
+      href="./img/favicon/android-chrome-192x192.png"
+    />
+    <link
+      rel="icon"
+      sizes="512x512"
+      href="./img/favicon/android-chrome-512x512.png"
+    />
+    <link rel="manifest" href="img/favicon/site.webmanifest" /> -->
+  </head>
+  <body id="home">
+    <header id="hero">
 
-
-    <div class="bx bx-menu" id="menu-icon"></div>
-
-    <ul class="navbar">
-        <li><a href="#home"><button>Home</button></a></li>
-            <li><a href="#about" class="nav-link about"><button>About</button></a></li>
-            <li><a href="#skills" class="nav-link skills"><button>Skills</button></a></li>
-            <li><a href="#projects" class="nav-link projects"><button>Projects</button></a></li>
-            <li><a href="#contact" class="nav-link contact"><button>Contact</button></a></li>
-            <li><a href="./resume/Harshal-Wagh-Resume.pdf" download="Harshal-Wagh-Resume" target="_blank" class="nav-link resume"><button id="resume-btn">Resume</button></a>
+      <nav id="nav-menu" id="navbar-scroll" class="navbar">
+        <blockquote class="alert">
+          <span>Welcome To My Portfolio</span>
+          
+        </blockquote>
+        <h1 class="logo">
+          <a href="#home"
+            ><img src="./img/favicon/profile-pic (1).png" alt="Harshal logo"
+          /></a>
+        </h1>
+        <div id="menu">
+          <ul class="nav-menu">
+            <li class="nav-items">
+              <a href="#home" class="nav-link home"
+                ><i class="nav-icon fas fa-home"></i>HOME</a
+              >
             </li>
-            <div class="bx bx-moon" id="darkmode"></div>
-    </ul>
-</header>
+            <li class="nav-items">
+              <a href="#about" class="nav-link about"
+                ><i class="nav-icon fas fa-user"></i>ABOUT</a
+              >
+            </li>
+            <li class="nav-items">
+              <a href="#skills" class="nav-link skills"
+                ><i class="nav-icon fas fa-cog"></i>SKILLS</a
+              >
+            </li>
+            <li class="nav-items">
+              <a href="#projects" class="nav-link projects"
+                ><i class="nav-icon fas fa-code"></i>PROJECTS</a
+              >
+            </li>
+            <li class="nav-items">
+              <a href="#contact" class="nav-link contact"
+                ><i class="nav-icon fas fa-address-book"></i>CONTACT</a
+              >
+            </li>
+            <li class="nav-items">
+              <a href="./resume/Harshal-Wagh-Resume.pdf" download="Harshal-Wagh-Resume" target="_blank" class="nav-link resume"
+              > <button id="harsh_res"> <i class="nav-icon fas fa-book"></i>RESUME</button></a>
+            </li>
 
-<!-- Navbar Section End -->
-<!-- Home Section Start -->
-<section class="home" id="home">
-    <div class="social">
-        <a  target="_blank" href="https://github.com/8309h" id="github"><i class='bx bxl-github'></i></a>
-        <a  target="_blank" href="https://www.linkedin.com/in/WaghHarshal/"><i class='bx bxl-linkedin'></i></a>
-        <!-- <a href="#"><i class='bx bxl-facebook'></i></a> -->
-    </div>
-    <div class="home-img">
-        <img class="home-img" src="./images/profile_photo.jpeg" alt="">
-    </div>
-    <div class="home-text">
-        <span>Hello, I'm</span>
-        <div class="kodfun">
-            <span style="--x :1">Harshal Kailas Wagh</span>
-          
+            <div class="theme-switch-wrapper">
+              <label class="theme-switch" for="checkbox">
+                <input type="checkbox" id="checkbox" />
+                <div class="slider round"></div>
+              </label>
+            </div>
+          </ul>
+          <div class="hamburger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+          </div>
         </div>
-        <!-- <h1>Harshal Wagh</h1> -->
-        <h2><span class="auto-type"></span></h2>
-        <p> "Passionate full stack web developer with expertise in creating dynamic and responsive web applications.Always open for challenges"</p>
-        <a href="./resume/Harshal-Wagh-Resume.pdf" class="btn" download="Harshal-Wagh-Resume">Resume</a>
-    </div>
-</section>
-<!-- Home Section End -->
-<!-- About Section Start -->
+      </nav>
 
-<section class="about-section" id="about">
-    <div class="heading">
-        <h2>About Me</h2>
-        <span>Introduction</span>
-    </div>
-
-    <div class="about-container">
-        <!-- <div class="about-img">
-            <img src="./images/Software code testing.png" alt="">
-        </div> -->
-        <div class="about-text">
-            <p>Efficient full stack developer, having the problem-solving ability.
-                A good learner and always excited to learn technology. Skilled in
-                teamwork, collaboration, time management, and other
-                interpersonal skills. Seeking to work in a challenging position in a
-                technology-driven organization.</p>
-            <div class="information">
-                <div class="info-box">
-                    <i class='bx bxs-user'></i>
-                    <span>Harshal Kailas Wagh</span>
-                </div>
-
-                <div class="info-box">
-                    <i class='bx bxs-phone'></i>
-                    <span>+91 9325038309</span>
-                </div>
-
-                <div class="info-box">
-                    <i class='bx bxs-envelope'></i>
-                    <span>harshalwagh201718@gmail.com</span>
-                </div>
-            </div>
-            <a href="./resume/Harshal-Wagh-Resume.pdf" class="btn" download="Harshal-Wagh-Resume" target="_blank">Resume</a>
+      <section class="content container">
+        <div class="content-text">
+          <span><h1>Hello, I'm <span class="underline"></span></h1></span>
+        <div class="kodfun" class="text-secondary">
+            <span style="--x:1">Harshal Kailas Wagh</span>
         </div>
-        <!-- <div class="about-img">
-            <img src="./images/Software code testing.png" alt="">
-        </div> -->
-    </div>
-</section>
-<!-- About Section End -->
-
-<!-- Skills Section Start -->
-
-<section class="skills" id="skills">
-    <div class="heading">
-        <h2>Skills</h2>
-        <span>My Skills</span>
-    </div>
-
-    <div class="skills-container">
-        <div class="bars">
-
-            <div class="bars-box">
-                <h3>HTML</h3>
-                <span>94%</span>
-                <div class="light-bar"></div>
-                <div class="percent-bar html-bar"></div>
-            </div>
-
-            <div class="bars-box">
-                <h3>CSS</h3>
-                <span>84%</span>
-                <div class="light-bar"></div>
-                <div class="percent-bar css-bar"></div>
-            </div>
-
-            <div class="bars-box">
-                <h3>JavaScript</h3>
-                <span>74%</span>
-                <div class="light-bar"></div>
-                <div class="percent-bar js-bar"></div>
-            </div>
-
-            <div class="bars-box">
-                <h3>Node.js</h3>
-                <span>80%</span>
-                <div class="light-bar"></div>
-                <div class="percent-bar react-bar"></div>
-            </div>
-            <div class="bars-box">
-                <h3>Mongo DB</h3>
-                <span>85%</span>
-                <div class="light-bar"></div>
-                <div class="percent-bar react-bar"></div>
-            </div>
-            <div class="bars-box">
-                <h3>Express</h3>
-                <span>80%</span>
-                <div class="light-bar"></div>
-                <div class="percent-bar react-bar"></div>
-            </div>
-            <div class="bars-box">
-                <h3>Mongoose</h3>
-                <span>80%</span>
-                <div class="light-bar"></div>
-                <div class="percent-bar react-bar"></div>
-            </div>
-            <div class="bars-box">
-                <h3>Rest API's</h3>
-                <span>80%</span>
-                <div class="light-bar"></div>
-                <div class="percent-bar react-bar"></div>
-            </div>
-        </div>
-        <div class="skills-img" >
-            <img style="width: 100%;" src="./images/Software code testing.png" alt="">
-           
-
-          
-        </div>
-    </div>
-</section>
-<!-- Skills Section End -->
-
-<!-- Services Section Start -->
-<section class="services" id="services">
-    <div class="heading">
-        <h2>Services</h2>
-        <span>Our Services</span>
-    </div>
-    <div class="services-content">
-
-        <div class="services-box">
-            <i class='bx bx-code-alt'></i>
-            <h3>Web Development</h3>
-            <a href="#">Learn More</a>
-        </div>
-
-        <div class="services-box">
-            <i class='bx bx-server'></i>
-            <h3>Backend Development</h3>
-            <a href="#">Learn More</a>
-        </div>
-        <div class="services-box">
-            <i class='bx bx-brush'></i>
-            <h3>UI/UX Design</h3>
-            <a href="#">Learn More</a>
-        </div>
-
-        <div class="services-box">
-            <i class='bx bxl-android'></i>
-            <h3>App Development</h3>
-            <a href="#">Learn More</a>
-        </div>
-    </div>
-</section>
-<!-- Services Section End -->
-
-
-<!-- project section started -->
-<section class="projects" id="projects">
-    <div class="project-div">
-        <div id="project-img">Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto exercitationem, voluptatem fugiat, nulla maxime nisi consectetur omnis doloribus eum eveniet sapiente ex quos accusantium sit nostrum corrupti, cum quisquam temporibus.</div>
-        <div id="project-information"></div>
-    </div>
-    <div class="project-div">
-        <div id="project-img">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deserunt sunt, mollitia, exercitationem distinctio quisquam ad neque a nostrum fugit officia accusantium cumque consequatur eaque, cupiditate officiis ullam. Earum sint at laboriosam nulla, unde dolor blanditiis eum tempora! Harum fugit error illo ducimus illum deserunt cumque facere. Velit iste modi ea molestias aliquid hic, cum iure obcaecati ipsum id voluptate? Corrupti, quos saepe nisi vitae repellat natus, id tempora praesentium dolore ab distinctio, dignissimos officia optio recusandae rerum culpa temporibus dolorum labore aut mollitia sint a error? Ratione doloribus ex, unde porro quia dolores corrupti aspernatur, facilis, assumenda nihil distinctio quaerat.</div>
-        <div id="project-information"></div>
-    </div>
-    <div class="project-div">
-        <div id="project-img">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Provident amet blanditiis voluptate molestiae veniam laborum, deserunt quod repellendus! Aspernatur doloribus excepturi suscipit ad placeat eos quod optio nobis nesciunt eum.</div>
-        <div id="project-information"></div>
-    </div>
-    <div class="project-div">
-        <div id="project-img">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo rerum temporibus accusantium, eos laudantium quae corporis illum itaque suscipit tenetur dolores hic repellendus inventore repellat praesentium fugiat eius. Non, rem!</div>
-        <div id="project-information"></div>
-    </div>
-    <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
-        <path fill="#FF0066" d="M47,-40.6C62,-31.9,76.1,-16,76.8,0.7C77.5,17.3,64.7,34.7,49.7,48C34.7,61.3,17.3,70.5,-1.1,71.6C-19.4,72.6,-38.9,65.5,-47.3,52.2C-55.6,38.9,-52.9,19.4,-54.2,-1.2C-55.4,-21.9,-60.6,-43.8,-52.2,-52.5C-43.8,-61.2,-21.9,-56.6,-3,-53.6C16,-50.6,31.9,-49.3,47,-40.6Z" transform="translate(100 100)" />
-      </svg>
-
       
-   
-</section>
+        <h2><span class="auto-type"></span></h2>
+        <p id="sumary"> Passionate full stack web developer with expertise in creating dynamic <br> and responsive web applications.Always open for challenges</p>
+        <a href="./resume/Harshal-Wagh-Resume.pdf" class="btn" download="Harshal-Wagh-Resume">Resume</a>
+        </div>
+        <div class="content-image">
+          <div class="overlay-icons"></div>
+          <img
+            src="./img/images/profile_photo.jpeg"
+            alt="A portrait of Victor Eke"
+          />
+        </div>
+      </section>
+    </header>
+    <main>
+      <!-- About Section -->
+      <section id="about" class="about-section">
+        <div class="bio container">
+          <h2 class="head-text">
+            ABOUT ME<span class="underline underline-primary"></span>
+          </h2>  
+          <p>Efficient full stack developer, having the problem-solving ability.</p>
 
-<!-- project section ended -->
-<!-- Contact Section Start -->
-<section class="contact" id="contact">
-    <div class="heading">
-        <h2>Contact</h2>
-        <span>Connect With Us</span>
-    </div>
-    <div class="contact-form">
-        <form action="">
-            <input type="text" placeholder="Your Name">
-            <input type="email" name="" id="" placeholder="Your Email">
-            <textare name="" id="" cols="30" rows="10" placeholder="Write Message Here..."></textare>
-                                <input type="button" value="Send" class="contact-button">
-                                </form>
-                            </div>
-                            </section>
-                            <!-- Contact Section End -->
-                         <div class="footer">
-                                <h2>Connect with me</h2>
-                                <div class="footer-social">
-                                    <a href="#"><i class='bx bxl-facebook'></i></a>
-                                    <a href="#"><i class='bx bxl-twitter'></i></a>
-                                    <a href="#"><i class='bx bxl-instagram'></i></a>
-                                    <a href="#"><i class='bx bxl-youtube'></i></a>
-                                </div>
+           <p>A good learner and always excited to learn technology. Skilled in teamwork, collaboration, time management,
+             and other interpersonal skills.</p> 
 
-                            </div>
+            <p>Seeking to work in a challenging position in a
+            technology-driven organization.</p>
 
-                            <div class="copyright">
-                                © Harhsal Wagh | All Right Reserved.</p>
-                            </div>
-                            <!-- Javascript -->
-                            <script src="index.js"></script>
-</body>
+          
+          <p>
+            Technologies and tools I'm currently exploring and interested about.
+          </p>
 
+          <ul class="language">
+            <li>HTML5</li>
+            <li>CSS3</li>
+            <li>JavaScript</li>
+            <li>Node.js</li>
+            <li>Mongo DB</li>
+            <li>Mongoose</li>
+            <li>Postman</li>
+            <li>Rest API</li>
+            <li>Canva</li>
+          </ul>
+
+          <ul class="language">
+            <!-- <li>Open source</li>
+            <li>Blogging & Technical Writing</li> -->
+          </ul>
+        </div>
+      </section>
+
+      <!-- Skills Section -->
+      <section id="skills">
+        <!-- <div>
+          <span>
+            <img  width="30%" height="30%" src="https://user-images.githubusercontent.com/80870870/226172568-9ece668f-7c2c-44c0-9102-13b5eac65703.png" alt="">
+            </span>
+        </div> -->
+        <div id="skills" class="container">
+          <div class="skills">
+            <div class="box-header">
+              <h3 class="text-primary head-text">
+                Benefits<span class="underline underline-primary"></span>
+              </h3>
+              <h3>Why should you hire me?</h3>
+              <p>
+                When buidling or cloning web projects, I strongly adhere to
+                these principles which make my websites both unique and
+                scaleable.
+              </p>
+            </div>
+            <div class="box-container">
+              <div class="card">
+                <span class="fas fa-search color-1"></span>
+                <h3>DSA</h3>
+                <p>
+                  I am the person who always searching for the optimise way of doing my code .
+                  In that critical thinking and Problem solving skills help me a lots.
+                </p>
+              </div>
+              <div class="card">
+                <span class="fas fa-mobile-alt color-2"></span>
+                <h3>Responsive Design</h3>
+                <p>
+                  I am passionate about responsiveness and making the websites I
+                  build look good on different devices, browsers and cross
+                  platforms using both "mobile first" approach and desktop
+                  "media queries"
+                </p>
+              </div>
+              <div class="card">
+                <span class="fas fa-code color-3"></span>
+                <h3>Reusable & Minimal code</h3>
+                <p>
+                  I try my best to write as minimal code as possible by using
+                  tools like CSS Variables and writing custom utility classes.
+                </p>
+              </div>
+              <div class="card">
+                <span class="fas fa-palette color-4"></span>
+                <h3>Great UI/UX & Accessibility</h3>
+                <p>
+                  I have a strong eye for designs, which allows me to transform
+                  templates into pixel-perfect code while making it accessible
+                  to all users. Principles I picked up from solving various
+                  <a
+                    href="https://www.frontendmentor.io/challenges"
+                    class="link-style"
+                    target="_blank"
+                    rel="no-referrer no-opener"
+                    >frontendmentor</a
+                  >
+                  challenges.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Technologies Section-->
+      <section class="container icons-container">
+        <div class="icons">
+          <span class="icon fab fa-html5" title="HTML5"></span>
+          <span class="icon fab fa-css3-alt" title="CSS3"></span>
+          <span class="icon fab fa-js" title="JavaScript"></span>
+          <span class="icon fab fa-node" title="NodeJs"></span>
+          <span class="icon fab fa-git-alt" title="Git"></span>
+          <span class="icon fab fa-bootstrap" title="Bootstrap"></span>
+          <span class="icon fab fa-react" title="Express"></span>
+        </div>
+      </section>
+
+      <!-- Projects Section-->
+      <section id="projects" class="container">
+        <h2 class="head-text">
+          FEATURED PROJECTS<span class="underline underline-secondary"></span>
+        </h2>
+
+        <div id="project-full">
+         <!-- Page 1 -->
+          <article class="project-content">
+            <div class="project-image project-image-one">
+              <img
+                src="./img/projects/Jiodigitalclone.png"
+                alt="reliancedigital clone"
+              />
+              <a
+                class="btn btn-one"
+                href="https://stirring-jelly-9ed478.netlify.app/"
+                target="_blank"
+                >Preview Link</a
+              >
+            </div>
+
+            <div class="card-content">
+              <h2>Jio digital Clone</h2>
+              <p>
+                This is a static clone of <a href="https://www.reliancedigital.in/">Jio digital</a> is the ecommerce site which deals with the elctronics products
+                
+              </p>
+              <div class="project-info">
+                <div class="stack">
+                  <small class="language">HTML5</small>
+                  <small class="language">SASS</small>
+                  <small class="language">JavaScript</small>
+                </div>
+
+                <div class="project-links">
+                  <a
+                    href="https://github.com/8309h/lewd-question-7867"
+                    target="_blank"
+                    ><i class="fab fa-github"></i
+                  ></a>
+                  <a
+                    href="https://hashnode-clone-sass.netlify.app/"
+                    target="_blank"
+                    ><i class="fas fa-external-link-alt"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+          </article>
+
+
+
+
+          <!-- Page 2 -->
+          <article class="project-content">
+            <div class="project-image project-image-one">
+              <img
+                src="./img/projects/Crate&barrel.png"
+                alt="Transformed minds project"
+              />
+              <a
+                class="btn btn-two"
+                href="https://creative-zabaione-caf0fa.netlify.app/"
+                target="_blank"
+                >Preview Link</a
+              >
+            </div>
+
+            <div class="card-content">
+              <h2>Home Decor</h2>
+              <p>
+                
+
+                Home Decor is the clone of <a href="https://www.crateandbarrel.com/" target="_blank">Crate&Barrel</a> is the shopping website 
+                which sells the household decorating and daily using products.
+
+              </p>
+              <div class="project-info">
+                <div class="stack">
+                  <small class="language">HTML5</small>
+                  <small class="language">CSS3</small>
+                  <small class="language">JavaScript</small>
+                  <small class="language">Bootstrap</small>
+                </div>
+
+                <div class="project-links">
+                  <a
+                    href="https://github.com/8309h/eminent-trucks-727"
+                    target="_blank"
+                    ><i class="fab fa-github"></i
+                  ></a>
+                  <a
+                    href="https://creative-zabaione-caf0fa.netlify.app/"
+                    target="_blank"
+                    ><i class="fas fa-external-link-alt"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Page 3 -->
+          <article class="project-content">
+            <div class="project-image project-image-two">
+              <img src="./img/projects/modesens.png" alt="skeep project" />
+              <a
+                class="btn btn-three"
+                href="https://melodious-daffodil-f1bcea.netlify.app/"
+                target="_blank"
+                >Preview Link</a
+              >
+            </div>
+
+            <div class="card-content">
+              <h2>Shop bag</h2>
+              <p>
+                It is the cone of  <a
+                  href="https://modesens.com/"
+                  target="_blank">modesens</a> is the US based website which give us the cloths in low price as 
+                  compared to the other markets.
+                
+              </p>
+              <div class="project-info">
+                <div class="stack">
+                
+                  <small class="language">HTML5</small>
+                  <small class="language">JavaScript</small>
+                  <small class="language">NodeJs</small>
+                  <small class="language">Express</small>
+                  <small class="language">Mongo DB</small>
+                  <small class="language">API Creation</small>
+                </div>
+
+                <div class="project-links">
+                  <a href="https://github.com/8309h/wonderful-country-7692" target="_blank"
+                    ><i class="fab fa-github"></i
+                  ></a>
+                  <a href="https://melodious-daffodil-f1bcea.netlify.app/" target="_blank"
+                    ><i class="fas fa-external-link-alt"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+          </article>
+         <!-- prohect4 -->
+          <article class="project-content">
+            <div class="project-image project-image-three">
+              <img src="./img/projects/time tracker.png" alt=" time tracker Project" />
+              <a
+                class="btn btn-four"
+                href="https://storied-paprenjak-8f2e60.netlify.app/"
+                target="_blank"
+                >Preview Link</a
+              >
+            </div>
+
+            <div class="card-content">
+              <h2>Time Tracker</h2>
+              <p>
+                Time tracker is the time managmnet website which is build from the scratch by the
+                 team of four developers in the time soan of four days.
+              </p>
+              <div class="project-info">
+                <div class="stack">
+                  <small class="language">HTML5</small>
+                  <small class="language">JavaScript</small>
+                  <small class="language">NodeJs</small>
+                  <small class="language">Express</small>
+                  <small class="language">Mongo DB</small>
+                  <small class="language">Node-mailer</small>
+                  <small class="language">socket.io</small>
+                  <small class="language">API Creation</small>
+                </div>
+
+                <div class="project-links">
+                  <a href="https://github.com/Smoke221/truculent-trains-1017" target="_blank"
+                    ><i class="fab fa-github"></i
+                  ></a>
+                  <a href="https://storied-paprenjak-8f2e60.netlify.app/" target="_blank"
+                    ><i class="fas fa-external-link-alt"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- <article class="project-content">
+            <div class="project-image project-image-four">
+              <img
+                src="./img/projects/hotelzeitaku.png"
+                alt="Hotel Zeitaku Project"
+              />
+              <a
+                class="btn btn-five"
+                href="https://hotelzeitaku.netlify.app/"
+                target="_blank"
+                >Preview Link</a
+              >
+            </div>
+
+            <div class="card-content">
+              <h2>Hotel Zeitaku</h2>
+              <p>
+                Hotel Zeitaku is an inspiration website from EdgeLedger project, a finance website from <a href="https://www.traversymedia.com">Brad Traversy's</a> Modern HTML & CSS From The Beginning (Including Sass) course on <a href="https://www.udemy.com/">Udemy</a>.
+              </p>
+              <div class="project-info">
+                <div class="stack">
+                  <small class="language">HTML5</small>
+                  <small class="language">CSS3</small>
+                  <small class="language">JavaScript</small>
+                </div>
+
+                <div class="project-links">
+                  <a
+                    href="https://github.com/Evavic44/Hotel-Zeitaku"
+                    target="_blank"
+                    ><i class="fab fa-github"></i
+                  ></a>
+                  <a href="https://hotelzeitaku.netlify.app/" target="_blank"
+                    ><i class="fas fa-external-link-alt"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-content">
+            <div class="project-image project-image-five">
+              <img
+                src="./img/projects/windows-10.png"
+                alt="Windows 10 project"
+              />
+              <a
+                class="btn btn-six"
+                href="https://windows-10-start-menu.netlify.app/"
+                target="_blank"
+                >Preview Link</a
+              >
+            </div>
+
+            <div class="card-content">
+              <h2>Windows 10 Start Menu</h2>
+              <p>
+                This is a clone of Microsoft's <a href="https://support.microsoft.com/en-us/windows/see-what-s-on-the-start-menu-a8ccb400-ad49-962b-d2b1-93f453785a13">Windows 10 start</a> menu. I built this with
+                CSS grid
+              </p>
+              <div class="project-info">
+                <div class="stack">
+                  <small class="language">HTML5</small>
+                  <small class="language">CSS3</small>
+                </div>
+
+                <div class="project-links">
+                  <a
+                    href="https://github.com/Evavic44/Windows-10-Start-menu"
+                    target="_blank"
+                    ><i class="fab fa-github"></i
+                  ></a>
+                  <a
+                    href="https://windows-10-start-menu.netlify.app/"
+                    target="_blank"
+                    ><i class="fas fa-external-link-alt"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+          </article> -->
+        </div>
+
+        <!-- Space -->
+        <!-- <div>Gihubs calender</div> -->
+       
+      </section>
+
+      <!-- Social -->
+      <section class="icons-container">
+        <div class="container">
+          <div class="social icons">
+            <a
+              href="https://github.com/8309h"
+              title="Github"
+              target="_blank"
+              class="fab fa-github"
+            ></a>
+            
+            <a
+              href="https://www.linkedin.com/in/WaghHarshal/"
+              title="Linkedin"
+              target="_blank"
+              class="fab fa-linkedin"
+            ></a>
+            <a
+              href="#"
+              title="Facebook"
+              target="_blank"
+              class="fab fa-facebook"
+            ></a>
+            
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact -->
+      <section id="contact" class="contact">
+        <div class="container">
+          <div class="form-header">
+            <h2 class="head-text">
+          Contact<span class="underline underline-secondary"></span>
+        </h2>
+            <h2 class="text-secondary">Get In Touch</h2>
+            <p>
+              Want to connect with me, Youcan send me a message and 
+              I'll reply as soon as I can.. Thank You.
+            </p>
+          </div>
+          <div class="form-container">
+            <div class="form-image"></div>
+            <div class="form-page">
+              <form action="thankyou.html" data-netlify="true" class="form">
+                <div class="form-group group-bg">
+                  <label for="Name">Name</label>
+                  <input
+                    type="text"
+                    id="Name"
+                    placeholder="Enter Name"
+                    required
+                  />
+                </div>
+                <div class="form-group group-bg">
+                  <label for="Subject">How can I reach you?(Twitter username or Linkedin)</label>
+                  <input type="text" id="Subject" placeholder="How can I reach you? (Twitter username or Linkedin)" required />
+                </div>
+                <div class="form-group group-bg">
+                  <label for="Message">Message</label>
+                  <textarea
+                    name="Message"
+                    id="Message"
+                    placeholder="Message"
+                  ></textarea>
+                </div>
+                <div class="form-group">
+                  <button type="submit" value="submit" class="btn">Submit</button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer id="footer">
+      <div class="container">
+        <div class="footer-container">
+          <div class="social">
+            <div>
+              <a href="https://www.linkedin.com/in/WaghHarshal/">
+                <img src="https://img.shields.io/badge/LinkedIn-blue?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn Badge"/>
+              </a>
+            </div>
+            <div>
+              <a href="https://github.com/8309h?tab=followers">
+                <img
+                  src="https://img.shields.io/github/followers/8309h?label=Followers&logo=GitHub&style=for-the-badge"
+                  alt="GitHub badge"
+                />
+              </a>
+            </div>
+          </div>
+          <p>Copyright &copy; Harshal Wagh😎, All rights reserved</p>
+          <a href="#home" class="btn-scroll-top" title="Home"
+            ><span class="fas fa-angle-up"></span
+          ></a>
+        </div>
+      </div>
+    </footer>
+      <script src="main.js"></script>
+  </body>
 </html>
 <script src="https://unpkg.com/typed.js@2.0.132/dist/typed.umd.js"></script>
 <script>
@@ -289,6 +664,3 @@
         });
     
 </script>
-
-
-
