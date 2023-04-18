@@ -39,6 +39,14 @@
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/global.css" />
 
+
+    <!-- script -->
+    <link rel="stylesheet"
+    href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <link rel="shortcut icon" type="image/png" href="images/c-alphabet-letter-logo-for-business-and-company-with-wings-and-black-and-white-grey-color-corporate-brading-and-lettering-icon-with-simple-design-vector.webp">
+
+  
+
     <!-- Favicon -->
     <!-- <link
       rel="apple-touch-icon"
@@ -96,9 +104,10 @@
             </li>
             <li class="nav-items">
               <a href="#skills" class="nav-link skills"
-                ><i class="nav-icon fas fa-cog">SKILLS</i></a
+                ><i class="nav-icon fas fa-cog">   SKILLS</i></a
               >
             </li>
+            
             <li class="nav-items">
               <a href="#projects" class="nav-link projects"
                 ><i class="nav-icon fas fa-code"></i>PROJECTS</a
@@ -113,6 +122,7 @@
               <a href="./resume/Harshal-Wagh-Resume.pdf" download="Harshal-Wagh-Resume" target="_blank" class="nav-link resume"
               > <button id="harsh_res"> <i class="nav-icon fas fa-book"></i>RESUME</button></a>
             </li>
+            
 
             <div class="theme-switch-wrapper">
               <label class="theme-switch" for="checkbox">
@@ -133,16 +143,17 @@
         <div class="content-text">
           <span><h1>Hello, I'm <span class="underline"></span></h1></span>
         <div class="kodfun" class="text-secondary">
-            <span style="--x:1">Harshal Kailas Wagh</span>
+            <span id="user-detail-name" style="--x:1">Harshal Kailas Wagh</span>
         </div>
       
         <h2><span class="auto-type"></span></h2>
-        <p id="sumary"> Passionate full stack web developer with expertise in creating dynamic <br> and responsive web applications.Always open for challenges</p>
+        <p id="sumary" id="user-detail-skill" > Passionate full stack web developer with expertise in creating dynamic <br> 
+          and responsive web applications.Always open for challenges</p>
         <a href="./resume/Harshal-Wagh-Resume.pdf" class="btn" download="Harshal-Wagh-Resume">Resume</a>
         </div>
         <div class="content-image">
           <div class="overlay-icons"></div>
-          <img
+          <img class="home-img"
             src="./img/images/result.png"
             alt="A portrait of Victor Eke"
           />
@@ -156,12 +167,12 @@
           <h2 class="head-text">
             ABOUT ME<span class="underline underline-primary"></span>
           </h2>  
-          <p>Efficient full stack developer, having the problem-solving ability.</p>
+          <p id="user-detail-intro" >Efficient full stack developer, having the problem-solving ability.</p>
 
-           <p>A good learner and always excited to learn technology. Skilled in teamwork, collaboration, time management,
-             and other interpersonal skills.</p> 
+           <p id="user-detail-intro">A good learner and always excited to learn technology. Skilled in teamwork, collaboration,<br>
+             time management, and other interpersonal skills.</p> 
 
-            <p>Seeking to work in a challenging position in a
+            <p id="user-detail-intro">Seeking to work in a challenging position in a
             technology-driven organization.</p>
 
           
@@ -174,11 +185,13 @@
             <li>CSS3</li>
             <li>JavaScript</li>
             <li>Node.js</li>
+            <li>ExpressJs</li>
             <li>Mongo DB</li>
             <li>Mongoose</li>
             <li>Postman</li>
             <li>Rest API</li>
             <li>Canva</li>
+            <li>Bootstrap</li>
           </ul>
 
           <ul class="language">
@@ -189,12 +202,90 @@
       </section>
 
       <!-- Skills Section -->
+      <section id="skills"> 
+        <div class="main-text">
+          <h2 class="head-text">
+            MY SKILLS<span class="underline underline-primary"></span>
+          </h2> 
+
+        </div>
+       <div class="nav-link skills" id="skills-part">
+        
+            <div class="skills-card">
+                <div class="skills-card-img">
+                    <i style="font-size: 100px;" class='bx bxl-html5' ></i>
+                </div>
+                <h3 class="skills-card-name">HTML</h3>
+               
+            </div>
+            <div class="skills-card">
+                <div class="skills-card-img">
+                    <i style="font-size: 100px;" class='bx bxl-css3' ></i>
+                </div>
+                <h3 class="skills-card-name">CSS</h3>
+                
+            </div>
+            <div class="skills-card">
+                    <div class="skills-card-img">
+                        <i style="font-size: 100px;" class='bx bxl-javascript' ></i>
+                    </div>
+                    <h3 class="skills-card-name">JavaScript</h3>
+                   
+                </div>
+              <div class="skills-card">
+                  <div class="skills-card-img">
+                      <i style="font-size: 100px;" class='bx bxl-nodejs' ></i>
+                  </div>
+                  <h3 class="skills-card-name">Node.Js</h3>
+                  
+              </div>
+            
+            <div class="skills-card">
+                <div class="skills-card-img">
+                    <i style="font-size: 100px;" class='bx bxl-mongodb' ></i>
+                </div>
+                <h3 class="skills-card-name">MongoDB</h3>
+                
+            </div>
+          <div class="skills-card">
+          <div class="skills-card-img">
+            <i style="font-size: 100px;" class="bx bxl-git" ></i>
+          </div>
+          <h3 class="skills-card-name">Git</h3>
+          </div>
+            <div class="skills-card">
+                <div class="skills-card-img">
+                  <i style="font-size: 100px;" class="bx bxl-github" ></i>
+                </div>
+                <h3 class="skills-card-name">GitHub</h3>
+               
+            </div>
+            <div class="skills-card">
+                <div class="skills-card-img">
+                  <i style="font-size: 100px;" class="fa-solid fa-cubes" ></i>
+                </div>
+                <h3 class="skills-card-name">DSA</h3>
+               
+            </div>
+          </div>
+
+          <!-- Technologies Section-->
+      <section class="container icons-container">
+        <div class="icons">
+          <span class="icon fab fa-html5" title="HTML5"></span>
+          <span class="icon fab fa-css3-alt" title="CSS3"></span>
+          <span class="icon fab fa-js" title="JavaScript"></span>
+          <span class="icon fab fa-node" title="NodeJs"></span>
+          <span class="icon fab fa-git-alt" title="Git"></span>
+          <span class="icon fab fa-bootstrap" title="Bootstrap"></span>
+          <span class="icon fab fa-github" title="GitHub"></span>
+        
+        </div>
+      </section>
+
+
       <section id="skills">
-        <!-- <div>
-          <span>
-            <img  width="30%" height="30%" src="https://user-images.githubusercontent.com/80870870/226172568-9ece668f-7c2c-44c0-9102-13b5eac65703.png" alt="">
-            </span>
-        </div> -->
+        
         <div id="skills" class="container">
           <div class="skills">
             <div class="box-header">
@@ -257,28 +348,58 @@
         </div>
       </section>
 
-      <!-- Technologies Section-->
-      <section class="container icons-container">
-        <div class="icons">
-          <span class="icon fab fa-html5" title="HTML5"></span>
-          <span class="icon fab fa-css3-alt" title="CSS3"></span>
-          <span class="icon fab fa-js" title="JavaScript"></span>
-          <span class="icon fab fa-node" title="NodeJs"></span>
-          <span class="icon fab fa-git-alt" title="Git"></span>
-          <span class="icon fab fa-bootstrap" title="Bootstrap"></span>
-          <span class="icon fab fa-react" title="Express"></span>
+      
+
+      <!-- GitHub -->
+      <div class="max-width" id="githubs">
+        <div class="main-text">
+            
+          <h2 class="head-text">
+            GITHUB CALENDER<span class="underline underline-primary"></span>
+          </h2> 
+
         </div>
-      </section>
+        <div id="stat">
+            <div >
+                <img class = "ht1" id="github-stats-card" 
+                src='https://github-readme-stats.vercel.app/api?username=8309h&count_private=true' >
+            </div>
+            <div  >
+                <img class = "ht1"  id="github-top-langs" 
+                 src='https://github-readme-stats.vercel.app/api/top-langs/?username=8309h&theme=outrun' >
+            </div>
+          <div >
+              <img class ="ht1" id="github-streak-stats" 
+              src='https://github-readme-streak-stats.herokuapp.com?user=8309h&theme=radical&hide_border=true&border_radius=6.5&date_format=M%20j%5B%2C%20Y%5D' >
+          </div>
+        </div>
+        
+
+        <div>
+            <script src="https://unpkg.com/github-calendar@latest/dist/github-calendar.min.js"></script>
+            <link rel="stylesheet" href="https://unpkg.com/github-calendar@latest/dist/github-calendar-responsive.css"/>
+    
+            <div class="calendar react-activity-calenda">
+            Loading the data just for you.
+            </div>
+    
+            <script>
+            GitHubCalendar(".calendar", "8309h");
+            // or enable responsive functionality
+            GitHubCalendar(".calendar", "8309h", { responsive: true });
+            </script>
+        </div>
+  </div> 
 
       <!-- Projects Section-->
-      <section id="projects" class="container">
+      <section id="projects" class="container" class="nav-link projects" id="nav-link-projects">
         <h2 class="head-text">
           FEATURED PROJECTS<span class="underline underline-secondary"></span>
         </h2>
 
-        <div id="project-full">
+        <div id="project-full" class="project-card">
          <!-- Page 1 -->
-          <article class="project-content">
+          <article class="project-content" class="project-card" >
             <div class="project-image project-image-one">
               <img
                 src="./img/projects/Jiodigitalclone.png"
@@ -293,25 +414,25 @@
             </div>
 
             <div class="card-content">
-              <h2>Jio digital Clone</h2>
-              <p>
+              <h2 class ="project-title">Jio digital Clone</h2>
+              <p class="project-description">
                 This is a static clone of <a href="https://www.reliancedigital.in/">Jio digital</a> is the ecommerce site which deals with the elctronics products
                 
               </p>
               <div class="project-info">
-                <div class="stack">
+                <div class="stack" class="project-tech-stack">
                   <small class="language">HTML5</small>
-                  <small class="language">SASS</small>
+                  <small class="language">SASS</small> 
                   <small class="language">JavaScript</small>
                 </div>
 
                 <div class="project-links">
-                  <a
+                  <a class="project-github-link"
                     href="https://github.com/8309h/lewd-question-7867"
                     target="_blank"
                     ><i class="fab fa-github"></i
                   ></a>
-                  <a
+                  <a class="project-deployed-link"
                     href="https://hashnode-clone-sass.netlify.app/"
                     target="_blank"
                     ><i class="fas fa-external-link-alt"></i
@@ -325,7 +446,7 @@
 
 
           <!-- Page 2 -->
-          <article class="project-content">
+          <article class="project-content" class="project-card">
             <div class="project-image project-image-one">
               <img
                 src="./img/projects/Crate&barrel.png"
@@ -340,8 +461,8 @@
             </div>
 
             <div class="card-content">
-              <h2>Home Decor</h2>
-              <p>
+              <h2 class="project-title">Home Decor</h2>
+              <p class="project-description">
                 
 
                 Home Decor is the clone of <a href="https://www.crateandbarrel.com/" target="_blank">Crate&Barrel</a> is the shopping website 
@@ -349,7 +470,7 @@
 
               </p>
               <div class="project-info">
-                <div class="stack">
+                <div class="project-tech-stack" class="stack">
                   <small class="language">HTML5</small>
                   <small class="language">CSS3</small>
                   <small class="language">JavaScript</small>
@@ -357,12 +478,12 @@
                 </div>
 
                 <div class="project-links">
-                  <a
+                  <a class="project-github-link"
                     href="https://github.com/8309h/eminent-trucks-727"
                     target="_blank"
                     ><i class="fab fa-github"></i
                   ></a>
-                  <a
+                  <a class="project-deployed-link"
                     href="https://creative-zabaione-caf0fa.netlify.app/"
                     target="_blank"
                     ><i class="fas fa-external-link-alt"></i
@@ -373,7 +494,7 @@
           </article>
 
           <!-- Page 3 -->
-          <article class="project-content">
+          <article class="project-content" class="project-card">
             <div class="project-image project-image-two">
               <img src="./img/projects/modesens.png" alt="skeep project" />
               <a
@@ -385,8 +506,8 @@
             </div>
 
             <div class="card-content">
-              <h2>Shop bag</h2>
-              <p>
+              <h2 class="project-title">Shop bag</h2>
+              <p  class="project-description">
                 It is the cone of  <a
                   href="https://modesens.com/"
                   target="_blank">modesens</a> is the US based website which give us the cloths in low price as 
@@ -394,7 +515,7 @@
                 
               </p>
               <div class="project-info">
-                <div class="stack">
+                <div class="project-tech-stack" class="stack">
                 
                   <small class="language">HTML5</small>
                   <small class="language">JavaScript</small>
@@ -405,18 +526,22 @@
                 </div>
 
                 <div class="project-links">
-                  <a href="https://github.com/8309h/wonderful-country-7692" target="_blank"
+                  <a  class="project-github-link" href="https://github.com/8309h/wonderful-country-7692" target="_blank"
                     ><i class="fab fa-github"></i
                   ></a>
-                  <a href="https://melodious-daffodil-f1bcea.netlify.app/" target="_blank"
+                  <a  class="project-deployed-link" href="https://melodious-daffodil-f1bcea.netlify.app/" target="_blank"
                     ><i class="fas fa-external-link-alt"></i
                   ></a>
                 </div>
               </div>
             </div>
           </article>
+
+
          <!-- prohect4 -->
-          <article class="project-content">
+
+
+          <article class="project-content" class="project-card">
             <div class="project-image project-image-three">
               <img src="./img/projects/time tracker.png" alt=" time tracker Project" />
               <a
@@ -428,13 +553,13 @@
             </div>
 
             <div class="card-content">
-              <h2>Time Tracker</h2>
-              <p>
+              <h2 class="project-title">Time Tracker</h2>
+              <p class="project-description">
                 Time tracker is the time managmnet website which is build from the scratch by the
                  team of four developers in the time soan of four days.
               </p>
               <div class="project-info">
-                <div class="stack">
+                <div class="project-tech-stack" class="stack">
                   <small class="language">HTML5</small>
                   <small class="language">JavaScript</small>
                   <small class="language">NodeJs</small>
@@ -446,10 +571,10 @@
                 </div>
 
                 <div class="project-links">
-                  <a href="https://github.com/Smoke221/truculent-trains-1017" target="_blank"
+                  <a class="project-github-link" href="https://github.com/Smoke221/truculent-trains-1017" target="_blank"
                     ><i class="fab fa-github"></i
                   ></a>
-                  <a href="https://storied-paprenjak-8f2e60.netlify.app/" target="_blank"
+                  <a class="project-deployed-link" href="https://storied-paprenjak-8f2e60.netlify.app/" target="_blank"
                     ><i class="fas fa-external-link-alt"></i
                   ></a>
                 </div>
@@ -539,10 +664,6 @@
             </div>
           </article> -->
         </div>
-
-        <!-- Space -->
-        <!-- <div>Gihubs calender</div> -->
-       
       </section>
 
       <!-- Social -->
