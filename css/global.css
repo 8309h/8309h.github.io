@@ -335,7 +335,7 @@ input:checked + .slider:before {
 }
 #skills-part{
   display: grid;
-  width: 82%;
+  /* width: 82%; */
   margin: auto;
   grid-template-columns: repeat(auto-fit, minmax(200px, auto));
   align-items: center;
@@ -394,7 +394,7 @@ input:checked + .slider:before {
 }
 
 .max-width{
-  width: 82%;
+  /* width: 82%; */
   margin: auto;
   margin-top: 50px;
 }
