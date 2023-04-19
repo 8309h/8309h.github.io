@@ -474,12 +474,13 @@ h4 {
 
 
 /* Contact */
-.contact {
+ /* .contact {
   margin: 2rem 0;
-}
+} */
 
 .contact .container {
   max-width: 1100px;
+  
 }
 
 .contact .form-header {
@@ -509,60 +510,6 @@ h4 {
   height: 100%;
 }
 
-.form-image {
-  background: url(/img/home/Pattern.svg) no-repeat center left/cover;
-  object-fit: cover;
-}
-
-.form-page {
-  align-self: center;
-  padding: 1rem 0;
-}
-
-.form {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  padding: 1.5rem;
-  grid-column: 1 span 3;
-}
-
-.form-group {
-  margin-bottom: 1.2rem;
-}
-
-.form-group label {
-  display: none;
-}
-
-.form-group input,
-.form-group textarea,
-.form-group button {
-  font-family: "Proxima", sans-serif;
-  display: block;
-  color: var(--text-primary-color);
-  width: 100%;
-  padding: 1rem;
-  border: 1px solid var(--other-color);
-  outline: none;
-  transition: border 0.3s ease-in-out;
-  font-size: 0.9rem;
-}
-
-.group-bg input,
-.group-bg textarea {
-  background-color: var(--other--color);
-}
-
-.form-group input:focus,
-.form-group textarea:focus {
-  border-bottom: 1px solid var(--primary-color);
-}
-
-.form-group .btn {
-  font-weight: 600;
-  transition: all 0.4s ease-in-out;
-}
 
 /* Thank you page */
 .thankyou {
