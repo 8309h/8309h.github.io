@@ -61,3 +61,16 @@ if (currentTheme) {
     toggleSwitch.checked = true;
   }
 }
+
+//// *=============================== resume open in new tab ==================================
+
+
+let resume1 = document.getElementById("resume-button-1").addEventListener("click", NewTab)
+let resume2 = document.getElementById("resume-button-2").addEventListener("click", NewTab)
+
+function NewTab() {
+  window.open(
+    "https://drive.google.com/file/d/1zaKV0PMn3Zf79WhEMjPloyIMbvaWn_6R/view?usp=share_link",
+    "_blank"
+  );
+}
