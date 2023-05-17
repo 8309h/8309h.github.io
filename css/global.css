@@ -342,7 +342,7 @@ input:checked+.slider:before {
   font-size: 150%;
 }
 
-#harsh_res {
+.harsh_res {
 
   border: none;
   color: red;
@@ -567,16 +567,18 @@ form {
   padding: 5px 25px;
   background-color: var(--github-color);
   border-radius: 3px;
-  color: var(--color-4);
+  color: var(--primary-color);
   font-size: 25px;
+  margin-top: 20px;
 }
 
 #btn-net {
   padding: 5px 25px;
   background-color: var(--netlify-color);
   border-radius: 3px;
-  color: var(--color-3);
+  color: var(--primary-color);
   font-size: 25px;
+  margin-top: 10px;
 }
 
 
@@ -604,11 +606,10 @@ form {
 
 .tag-btn:is(:hover, :focus-visible) {
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-  /* background-image: linear-gradient(var(--bg-oxford-blue), var(--bg-oxford-blue)), var(--gradient-1); */
   background-clip: padding-box, border-box;
   border-color: transparent;
-  transform: translateY(10px);
-  transition: all 2ms;
+  transform: translateY(-10px);
+  transition: all 5ms;
 }
 
 .tag-btn img {
