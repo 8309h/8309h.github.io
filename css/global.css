@@ -458,17 +458,24 @@ form {
   margin-bottom: 2.8rem;
 }
 .list li{
-  margin-bottom: 12px;
+  margin-bottom: 18px;
 }
-.list li a{
+.list li a {
+  font-size: 20px;
+  color: var(--text-color);
+ 
+}
+/* .list li a{
   display: block;
   color: var(--second-color);
   font-size: 20px;
   transition: all .45s ease;
-}
+} */
 .list li a:hover{
-  color: var(--text-color);
+  color: var(--primary-color);
   transform: translateX(10px);
+  /* font-size: 23px; */
+  margin-left: 10px;
 }
 .contact-icons i{
   height:  45px;
