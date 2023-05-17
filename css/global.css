@@ -534,3 +534,45 @@ form {
   font-weight: 600;
   transition: all 0.4s ease-in-out;
 } 
+
+
+/* ----------------about section---------------- */
+
+.about__description {
+  text-align: justify;
+  margin-bottom: var(--mb-2-5);
+}
+
+.about__info {
+  display: flex;
+  justify-content: space-evenly;
+  margin-bottom: var(--mb-2-5);
+}
+.about__info  div {
+  background-color: #0073e0;
+  width: 200px;
+  padding: 10px 0px;
+  border-radius: 5px;
+}
+
+.about__info-title {
+  font-size: var(--h2-font-size);
+  font-weight: var(--font-semi-bold);
+  color: var(--title-color);
+}
+
+.about__info-name {
+  font-size: var(--smaller-font-size);
+}
+
+.about__info-title,
+.about__info-name {
+  display: block;
+  text-align: center;
+}
+
+.about__buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
