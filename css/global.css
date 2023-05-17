@@ -607,8 +607,8 @@ form {
   /* background-image: linear-gradient(var(--bg-oxford-blue), var(--bg-oxford-blue)), var(--gradient-1); */
   background-clip: padding-box, border-box;
   border-color: transparent;
-  transform: translateY(-2px);
-  transition: all 5ms;
+  transform: translateY(10px);
+  transition: all 2ms;
 }
 
 .tag-btn img {
