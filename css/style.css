@@ -941,7 +941,7 @@ h4 {
 }
 
 @media (max-width: 500px) {
-  .skills .box-container2 {
+  .skills2 .box-container2 {
     grid-template-columns: 1fr;
   }
 
@@ -973,5 +973,5 @@ h4 {
     margin: auto;
     align-items: center;
   }
-  
+
 }
