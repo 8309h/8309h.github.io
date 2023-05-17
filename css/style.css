@@ -930,7 +930,7 @@ h4 {
     height: 200px;
   }
 
-  #skills {
+  #skills2 {
     padding: 1rem;
   }
   .about__info {
@@ -941,7 +941,7 @@ h4 {
 }
 
 @media (max-width: 500px) {
-  .skills .box-container {
+  .skills .box-container2 {
     grid-template-columns: 1fr;
   }
 
