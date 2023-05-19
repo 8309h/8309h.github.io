@@ -616,6 +616,16 @@ form {
   width: 100%;
   max-width: 32px;
 }
+.tag-btn img {
+  transform-origin: 0 0;
+  transition: transform 1s, filter 2s ease-in-out;
+  filter: grayscale(30%);
+}
+
+.tag-btn img:hover{
+  filter: brightness(100%);
+  transform: scale(1.36);
+}
 
 .grid-list {
   display: grid;
