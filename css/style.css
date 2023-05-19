@@ -956,6 +956,9 @@ h4 {
   .tag-btn {
     justify-content: center;
   }
+  #stat {
+    margin: auto;
+  }
 }
 
 @media (max-width: 400px) {
@@ -980,5 +983,6 @@ h4 {
    
     justify-content: center;
   }
+
 
 }
