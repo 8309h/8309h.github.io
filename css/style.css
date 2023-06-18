@@ -730,11 +730,16 @@ h4 {
 
 .social div {
   margin-top: 0.5rem;
+ 
 }
 
 .social div img {
   width: 135px;
   height: 100%;
+  
+}
+.social div a {
+  border-radius: 50%;
 }
 
 #github {
