@@ -71,7 +71,7 @@ let resume2 = document.getElementById("resume-button-2").addEventListener("click
 
 function NewTab() {
   window.open(
-    "https://drive.google.com/file/d/1zaKV0PMn3Zf79WhEMjPloyIMbvaWn_6R/view?usp=share_link",
+    "https://drive.google.com/file/d/1zaKV0PMn3Zf79WhEMjPloyIMbvaWn_6R/view?usp=sharing",
     "_blank"
   );
 }
