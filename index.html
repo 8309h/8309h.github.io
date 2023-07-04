@@ -750,25 +750,23 @@
             <form action="https://formspree.io/f/xzblplqp" method="POST" data-netlify="true" class="form">
                 <div class="form-group group-bg">
                   <label for="Name">Name</label>
-                  <!-- <input  id="Name" name:"name" placeholder="Enter Name" required /> -->
-                  <input name="name" placeholder="Enter Name" required>
+                  
+                  <input name="name" id="Name" placeholder="Enter Name" required>
                 </div>
                 <div class="form-group group-bg">
                   <label for="Name">Email</label>
-                  <input type="text" id="Email" placeholder="Enter Email" name="email" required />
+                  <input type="email" id="Email" placeholder="Enter Email" name="email" required />
                 </div>
                 <!-- <div class="form-group group-bg">
                   <label for="Subject">How can I reach you?(Linkedin username)</label>
-                 
                   <input name="Message" id="Message" placeholder="Subject" name="message" />
                 </div> -->
                 <div class="form-group group-bg">
                   <label for="Message">Message</label>
-                  <textarea name="Message" id="Message" placeholder="Message" name="message" ></textarea>
+                  <textarea name="Message" id="Message" placeholder="Message" name="message"  required></textarea>
                 </div>
                 <div class="form-group">
                   <button type="submit" value="submit" class="btn">Submit</button>
-
                 </div>
                 <p id="my-form-status"></p>
               </form>
@@ -813,12 +811,7 @@
 <script>
   // -------------- auto type ------------------
 
-  // var typed = new Typed(".auto-type", {
-  //   strings: ["Full Stack Web Developer"],
-  //   typeSpeed: 75,
-  //   backSpeed: 75,
-  //   loop: true,
-  // });
+  
 
   const typed = new Typed('.auto-type', {
     strings: ['Full Stack Web Developer', 'Backend Developer', 'Frontend Developer'],
