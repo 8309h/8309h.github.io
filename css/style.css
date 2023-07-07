@@ -69,12 +69,7 @@ body {
  
   
 }
-body section {
-  width: 90%;
-  margin: auto;
-  margin-left: 5%;
-  /* background-color: #0277bd; */
-}
+
 
 @font-face {
   font-family: "Proxima";
