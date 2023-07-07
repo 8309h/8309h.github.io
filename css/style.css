@@ -72,6 +72,7 @@ body {
 body section {
   width: 90%;
   margin: auto;
+  margin-left: 5%;
   /* background-color: #0277bd; */
 }
 
@@ -863,11 +864,6 @@ h4 {
 
 /* Navbar */
 @media (max-width: 768px) and (max-width: 701px) {
-  body section {
-    width: 90%;
-    margin: auto;
-    /* background-color: #0277bd; */
-  }
   .navbar {
     justify-content: space-between;
   }
@@ -975,11 +971,6 @@ h4 {
 }
 
 @media (max-width: 700px) {
-  body section {
-    width: 90%;
-    margin: auto;
-    /* background-color: #0277bd; */
-  }
   #hero {
     height: 130vh;
   }
@@ -1025,11 +1016,6 @@ h4 {
 }
 
 @media (max-width: 500px) {
-  body section {
-    /* width: 90%; */
-    margin: auto;
-    /* background-color: #0277bd; */
-  }
   .skills2 .box-container2 {
     grid-template-columns: 1fr;
   }
@@ -1053,11 +1039,6 @@ h4 {
 }
 
 @media (max-width: 400px) {
-  body section {
-    /* width: 90%; */
-    margin: auto;
-    /* background-color: #0277bd; */
-  }
   #hero {
     height: 100%;
   }
