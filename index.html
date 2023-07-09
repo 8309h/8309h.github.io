@@ -23,7 +23,7 @@
   <link rel="shortcut icon" type="image/png"
     href="images/c-alphabet-letter-logo-for-business-and-company-with-wings-and-black-and-white-grey-color-corporate-brading-and-lettering-icon-with-simple-design-vector.webp">
 
-<link rel="manifest" href="img/favicon/site.webmanifest" />
+  <link rel="manifest" href="img/favicon/site.webmanifest" />
 </head>
 
 <body id="home">
@@ -130,7 +130,8 @@
 
 
             With over 1200 hours of practical experience in coding, I have built numerous websites, honing my skills in
-            the process. Additionally, I have successfully solved more than 700 Data Structures and Algorithms (DSA) questions.
+            the process. Additionally, I have successfully solved more than 700 Data Structures and Algorithms (DSA)
+            questions.
             <br><br>
 
             My ultimate goal is to work as a backend developer and provide valuable solutions. I am driven by a strong
@@ -411,16 +412,16 @@
         </div>
       </div>
     </section>
-  <!------------------------------------ GitHub----------------------------------- -->
+    <!------------------------------------ GitHub----------------------------------- -->
 
     <section id="gittt">
       <div class="max-width nav-link github" id="github">
         <div class="main-text">
-  
+
           <h2 class="head-text">
             GITHUB CALENDER<span class="underline underline-primary"></span>
           </h2>
-  
+
         </div>
         <div id="stat">
           <div>
@@ -435,22 +436,22 @@
             <img class="ht1" id="github-streak-stats"
               src='https://github-readme-streak-stats.herokuapp.com?user=8309h&theme=radical&hide_border=true&border_radius=6.5&date_format=M%20j%5B%2C%20Y%5D'>
           </div>
-  
+
           <!-- <div class="react-activity-calendar">
               <img style="display: block; margin: auto; margin-top: 40px; width: 100%;"
                 src="https://ghchart.rshah.org/8309h" alt="Shahid77137's Github chart" />
             </div> -->
         </div>
-  
-  
+
+
         <div id="calendar_harsh">
           <script src="https://unpkg.com/github-calendar@latest/dist/github-calendar.min.js"></script>
           <link rel="stylesheet" href="https://unpkg.com/github-calendar@latest/dist/github-calendar-responsive.css" />
-  
+
           <div class="calendar react-activity-calenda" id="calendar">
             Loading the data just for you.
           </div>
-  
+
           <script>
             GitHubCalendar(".calendar", "8309h");
             // or enable responsive functionality
@@ -744,33 +745,29 @@
           </div>
           <div class="form-page">
             <form action="https://formspree.io/f/xzblplqp" method="POST" data-netlify="true" class="form">
-                <div class="form-group group-bg">
-                  <label for="Name">Name</label>
-                  
-                  <input name="name" id="Name" placeholder="Enter Name" required>
-                </div>
-                <div class="form-group group-bg">
-                  <label for="Name">Email</label>
-                  <input type="email" id="Email" placeholder="Enter Email" name="email" required />
-                </div>
-                <!-- <div class="form-group group-bg">
+              <div class="form-group group-bg">
+                <label for="Name">Name</label>
+
+                <input name="name" id="Name" placeholder="Enter Name" required>
+              </div>
+              <div class="form-group group-bg">
+                <label for="Name">Email</label>
+                <input type="email" id="Email" placeholder="Enter Email" name="email" required />
+              </div>
+              <!-- <div class="form-group group-bg">
                   <label for="Subject">How can I reach you?(Linkedin username)</label>
                   <input name="Message" id="Message" placeholder="Subject" name="message" />
                 </div> -->
-                <div class="form-group group-bg">
-                  <label for="Message">Message</label>
-                  <textarea name="Message" id="Message" placeholder="Message" name="message"  required></textarea>
-                </div>
-                <div class="form-group">
-                  <button type="submit" value="submit" class="btn">Submit</button>
-                </div>
-                <p id="my-form-status"></p>
-              </form>
-
-           
-
-
-          </div>
+              <div class="form-group group-bg">
+                <label for="Message">Message</label>
+                <textarea name="Message" id="Message" placeholder="Message" name="message" required></textarea>
+              </div>
+              <div class="form-group">
+                <button type="submit" value="submit" class="btn">Submit</button>
+              </div>
+              <p id="my-form-status"></p>
+            </form>
+           </div>
 
 
         </div>
@@ -807,7 +804,7 @@
 <script>
   // -------------- auto type ------------------
 
-  
+
 
   const typed = new Typed('.auto-type', {
     strings: ['Full Stack Web Developer', 'Backend Developer', 'Frontend Developer'],
@@ -819,35 +816,35 @@
 
 
   var form = document.querySelector("form");
-    
-    async function handleSubmit(event) {
-      event.preventDefault();
-      var status = document.getElementById("my-form-status");
-      var data = new FormData(event.target);
-      fetch(event.target.action, {
-        method: form.method,
-        body: data,
-        headers: {
-            'Accept': 'application/json'
-        }
-      }).then(response => {
-        if (response.ok) {
-          status.innerHTML = "Waiting....";
-          window.location.href = "./thankyou.html"
-          form.reset()
-        } else {
-          response.json().then(data => {
-            if (Object.hasOwn(data, 'errors')) {
-              status.innerHTML = data["errors"].map(error => error["message"]).join(", ")
-            } else {
-              status.innerHTML = "Oops! There was a problem submitting your form"
-            }
-          })
-        }
-      }).catch(error => {
-        status.innerHTML = "Oops! There was a problem submitting your form"
-      });
-    }
-    form.addEventListener("submit", handleSubmit)
+
+  async function handleSubmit(event) {
+    event.preventDefault();
+    var status = document.getElementById("my-form-status");
+    var data = new FormData(event.target);
+    fetch(event.target.action, {
+      method: form.method,
+      body: data,
+      headers: {
+        'Accept': 'application/json'
+      }
+    }).then(response => {
+      if (response.ok) {
+        status.innerHTML = "Waiting....";
+        window.location.href = "./thankyou.html"
+        form.reset()
+      } else {
+        response.json().then(data => {
+          if (Object.hasOwn(data, 'errors')) {
+            status.innerHTML = data["errors"].map(error => error["message"]).join(", ")
+          } else {
+            status.innerHTML = "Oops! There was a problem submitting your form"
+          }
+        })
+      }
+    }).catch(error => {
+      status.innerHTML = "Oops! There was a problem submitting your form"
+    });
+  }
+  form.addEventListener("submit", handleSubmit)
 
 </script>
