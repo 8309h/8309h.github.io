@@ -138,7 +138,7 @@ h4 {
   align-items: center;
   justify-content: space-around;
   width: 100%;
-  padding: 20px;
+  /* padding: 20px; */
   position: fixed;
   top: 0;
   background: var(--bg-primary-color);
@@ -148,6 +148,7 @@ h4 {
   height: 50px;
   /* padding-left: 5%;
   padding-right: 5%; */
+  
 }
 
 .navbar ul {
@@ -911,6 +912,7 @@ h4 {
   .hamburger {
     display: block;
     cursor: pointer;
+    margin-right: 20px;
   }
 
   .hamburger.active .bar:nth-child(2) {
