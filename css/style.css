@@ -138,7 +138,7 @@ h4 {
   align-items: center;
   justify-content: space-around;
   width: 100%;
-  padding: 20px;
+  /* padding: 40px; */
   position: fixed;
   top: 0;
   background: var(--bg-primary-color);
