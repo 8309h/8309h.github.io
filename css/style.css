@@ -1092,6 +1092,7 @@ form {
   font-size: 1rem;
   color: var(--text-primary-color);
 }
+
 .btn:hover {
   background-color: var(--primary-color);
 }
