@@ -683,6 +683,7 @@ h4 {
 /* Footer */
 #footer {
   background-color: var(--bg-secondary-color);
+  width: 100%;
 }
 
 #footer .footer-container {
@@ -928,7 +929,7 @@ h4 {
   }
 
   body {
-    overflow-x: hidden;
+    /* overflow-x: hidden; */
   }
 
   #hero {
