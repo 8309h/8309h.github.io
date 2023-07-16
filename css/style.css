@@ -1105,6 +1105,14 @@ form {
   .skills-card.tag-btn:hover {
     transform: scale(1.3);
   }
+  .list #contact-email{
+    font-size: 60%;
+    
+  }
+  .list #contact-email:hover {
+    font-size: 70%;
+    
+  }
 
   
 
