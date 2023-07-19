@@ -886,7 +886,7 @@ form {
   line-height: 1;
 }
 
-.nav-link-contact p {
+.nav-link-contact {
   color: var(--second-color);
   font-size: var(--p-font);
   line-height: 1.8;
@@ -898,8 +898,9 @@ form {
 }
 
 .list li {
-  margin-bottom: 18px;
-  font-size: 25px;
+  display: flex;
+  margin-bottom: 10px;
+  font-size: 50%;
 }
 
 .list li a {
@@ -1108,11 +1109,16 @@ form {
   .list #contact-email{
     font-size: 60%;
     
+    
   }
   .list #contact-email:hover {
     font-size: 70%;
     
   }
+
+
+
+  
 
   
 
