@@ -1,36 +1,37 @@
 @import url('https://fonts.googleapis.com/css2?family=Manrope&family=Montserrat:wght@600&family=Poppins&family=Quicksand&display=swap');
 
-*{
+* {
   font-family: montserrat, poppins;
- 
+
 }
+
 :root {
   /* Light Mode */
-  --primary-color :#0369a4;
+  --primary-color: #0369a4;
   /* --secondary-color: #9a9bef; */
   --secondary-color: #077ec3;
   --text-primary-color: #333333;
   --text-secondary-color: #64707d;
   /* --bg-primary-color: #fff; */
-  --bg-primary-color: #e5f9f5 ;
+  --bg-primary-color: #e5f9f5;
   --bg-secondary-color: #f2f2f2;
   --other-color: #ccc;
   --navbar-bg: rgba(0, 0, 0, 0.1);
   --rotate-color: #000;
-  --github-color : #000;
-  --netlify-color : #0ed29f;
+  --github-color: #000;
+  --netlify-color: #0ed29f;
   /* Icons */
   --color-1: #e65100;
   /* --color-2: #8a2be2; */
   --color-2: #0369a4;
   --color-3: #0277bd;
   --color-4: #ffd600;
-  --color-5 :#0ed29f;
+  --color-5: #0ed29f;
 }
 
 [data-theme="dark"] {
   /* Dark Mode */
-  --primary-color :#0369a4;
+  --primary-color: #0369a4;
   --secondary-color: #077ec3;
   /* --secondary-color: #989aef; */
   --text-primary-color: #fff;
@@ -40,8 +41,8 @@
   --other-color: #232323;
   --navbar-bg: rgba(0, 0, 0, 0.4);
   --rotate-color: #fff;
-  --github-color : #232323;
-  --netlify-color : #fff;
+  --github-color: #232323;
+  --netlify-color: #fff;
 }
 
 html {
@@ -57,7 +58,7 @@ html {
 
 /* Main  */
 body {
-  
+
   background: var(--bg-primary-color);
   color: var(--text-primary-color);
   font-family: "Proxima", sans-serif;
@@ -73,6 +74,7 @@ body {
     url("/assets/font/ProximaNova-Regular.otf") format("truetype");
   font-display: swap;
 }
+
 @font-face {
   font-family: "Jetbrains";
   font-style: normal;
@@ -141,7 +143,7 @@ h4 {
     0 2px 6px 2px rgba(60, 64, 67, 0.15);
   z-index: 200;
   height: 50px;
- 
+
 }
 
 .navbar ul {
@@ -331,7 +333,7 @@ h4 {
   font-size: 1em;
   margin-top: 1.5rem;
   padding-left: 2rem;
-} 
+}
 
 
 /* Skills Section */
@@ -583,60 +585,79 @@ h4 {
   10% {
     transform: translateX(100px);
   }
+
   15% {
     transform: translateY(-100px);
   }
+
   20% {
     transform: translateX(200px);
   }
+
   25% {
     transform: translateY(-200px);
   }
+
   30% {
     transform: translateX(300px);
   }
+
   35% {
     transform: translateY(-300px);
   }
+
   40% {
     transform: translateX(110px);
   }
+
   45% {
     transform: translateY(-110px);
   }
+
   50% {
     transform: translateX(130px);
   }
+
   55% {
     transform: translateY(-130px);
   }
+
   60% {
     transform: translateX(150px);
   }
+
   65% {
     transform: translateY(-150px);
   }
+
   70% {
     transform: translateX(170px);
   }
+
   75% {
     transform: translateY(-170px);
   }
+
   80% {
     transform: translateX(190px);
   }
+
   85% {
     transform: translateY(-190px);
   }
+
   90% {
     transform: translateX(210px);
   }
+
   95% {
     transform: translateY(-210px);
   }
+
   100% {
     transform: translateX(100px);
   }
+
   105% {
     transform: translateY(-100px);
   }
@@ -735,6 +756,7 @@ h4 {
 #footer .btn-scroll-top span {
   transition: all 0.3s cubic-bezier(0, 0, 1, 0);
 }
+
 #footer .btn-scroll-top:hover span {
   transform: translateY(-5px);
 }
@@ -747,14 +769,16 @@ h4 {
   width: 135px;
   height: 100%;
 }
+
 #github {
   padding: 1rem;
   text-align: center;
-  margin: auto;}
+  margin: auto;
+}
 
 
 #stat {
- 
+
   width: 95%;
   margin: auto;
   margin-top: 3%;
@@ -770,7 +794,7 @@ h4 {
 #calendar_harsh {
   width: 95%;
   margin: auto;
- 
+
   background-color: #5198daa8;
 }
 
@@ -850,7 +874,7 @@ h4 {
   /* width: 82%; */
   margin: auto;
   margin-top: 50px;
- 
+
 }
 
 /* conatct sectionn */
@@ -886,7 +910,7 @@ form {
   line-height: 1;
 }
 
-.nav-link-contact {
+.nav-link-contact p {
   color: var(--second-color);
   font-size: var(--p-font);
   line-height: 1.8;
@@ -898,13 +922,13 @@ form {
 }
 
 .list li {
-  display: flex;
-  margin-bottom: 10px;
-  font-size: 40%;
+  text-decoration: none;
+  margin-bottom: 18px;
+  font-size: 25px;
 }
 
 .list li a {
-  font-size: 75%;
+  font-size: 80%;
   color: var(--text-color);
   transition: all 2s;
 
@@ -1070,6 +1094,7 @@ form {
   transform: translateY(-10px);
   transition: all 5ms;
 }
+
 .tag-btn img {
   width: 100%;
   max-width: 32px;
@@ -1082,7 +1107,7 @@ form {
   filter: grayscale(30%);
 }
 
-.tag-btn img:hover{
+.tag-btn img:hover {
   filter: brightness(100%);
   transform: scale(1.36);
 }
@@ -1103,16 +1128,22 @@ form {
 .btn:hover {
   background-color: var(--primary-color);
 }
-  .skills-card.tag-btn:hover {
-    transform: scale(1.3);
-  }
+
+.skills-card.tag-btn:hover {
+  transform: scale(1.3);
+}
+
+.list #contact-email {
+  font-size: 62%;
+
+}
+
+.list #contact-email:hover {
+  font-size: 70%;
+
+}
 
 
-
-
-  
-
-  
 
 
 
@@ -1141,6 +1172,7 @@ form {
 
 /* Responsive */
 @media (max-width: 890px) {
+
   /* Project */
   .project-content {
     grid-template-columns: 1fr;
@@ -1257,7 +1289,7 @@ form {
   }
 
   body {
-   
+
     overflow-x: hidden;
   }
 
@@ -1328,13 +1360,15 @@ form {
   #skills2 {
     padding: 1rem;
   }
+
   .about__info {
     flex-direction: column;
     gap: 20px;
     align-items: center;
   }
+
   #stat {
-    grid-template-columns: repeat(2,1fr);
+    grid-template-columns: repeat(2, 1fr);
     margin-bottom: 2%;
   }
 }
@@ -1347,28 +1381,33 @@ form {
   .project-container {
     grid-template-columns: 1fr;
   }
+
   .about__info {
     flex-direction: column;
-   gap: 20px;
-   align-items: center;
+    gap: 20px;
+    align-items: center;
   }
+
   .tag-btn {
     justify-content: center;
   }
+
   #stat {
     margin: auto;
-    grid-template-columns: repeat(1,1fr);
+    grid-template-columns: repeat(1, 1fr);
     margin-bottom: 2%;
   }
-  
+
   #sumary {
     font-size: 20px;
   }
-  .kodfun{
+
+  .kodfun {
     font-size: 10px;
 
   }
-  .auto-type{
+
+  .auto-type {
     font-size: 20px;
   }
 }
@@ -1385,35 +1424,42 @@ form {
   .content h2 {
     font-size: 1.3rem;
   }
+
   .about__info {
     flex-direction: column;
     gap: 20px;
     margin: auto;
     align-items: center;
   }
+
   .tag-btn {
-   
+
     justify-content: center;
   }
+
   #stat {
     margin: auto;
-    grid-template-columns: repeat(1,1fr);
+    grid-template-columns: repeat(1, 1fr);
     margin-bottom: 2%;
   }
+
   .form-page form {
     margin: auto;
     /* width: 90%; */
     margin-right: 7%;
-    
+
   }
+
   #sumary {
     font-size: 20px;
   }
-  .kodfun{
+
+  .kodfun {
     font-size: 10px;
 
   }
-  .auto-type{
+
+  .auto-type {
     font-size: 20px;
   }
 
