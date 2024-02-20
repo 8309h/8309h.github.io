@@ -288,13 +288,13 @@
             </button>
           </li>
 
-          <li>
+          <!-- <li>
             <button class="skills-card tag-btn">
               <img class="skills-card-img" src="./images/npm.svg" width="32" height="32" loading="lazy" alt="NPM" />
 
               <p class="skills-card-name">NPM</p>
             </button>
-          </li>
+          </li> -->
 
           <li>
             <button class="skills-card tag-btn">
@@ -337,14 +337,22 @@
               <p class="skills-card-name">Cyclic</p>
             </button>
           </li>
-          <!-- <li>
+          <li>
             <button class="skills-card tag-btn">
-              <img class="skills-card-img" src="./images/figma-removebg-preview.png" width="32" height="32"
+              <img class="skills-card-img" src="./images/pyt.jpeg" width="32" height="32"
                 loading="lazy" />
 
-              <p class="skills-card-name">Figma</p>
+              <p class="skills-card-name">Python</p>
             </button>
-          </li> -->
+          </li>
+          <li>
+            <button class="skills-card tag-btn">
+              <img class="skills-card-img" src="./images/flask.png" width="32" height="32"
+                loading="lazy" />
+
+              <p class="skills-card-name">Flask</p>
+            </button>
+          </li>
         </ul>
       </div>
 
@@ -510,25 +518,22 @@
 
 
         <div id="calendar_harsh">
+          <div class="calendar react-activity-calendar" id="calendar">
+              Loading the data just for you.
+          </div>
+      
           <script src="https://unpkg.com/github-calendar@latest/dist/github-calendar.min.js"></script>
           <link rel="stylesheet" href="https://unpkg.com/github-calendar@latest/dist/github-calendar-responsive.css" />
-
-          <div class="calendar react-activity-calenda" id="calendar">
-            Loading the data just for you.
-          </div>
-
+      
           <script>
-            GitHubCalendar(".calendar", "8309h");
-            // or enable responsive functionality
-            // GitHubCalendar(".calendar", "8309h", { responsive: true });
-
-            GitHubCalendar(".calendar", "8309h", {
-              responsive: true,
-              global_stats: false,
-              tooltips: true,
-            });
+              GitHubCalendar(".calendar", "8309h", {
+                  responsive: true,
+                  global_stats: false,
+                  tooltips: true
+              });
           </script>
-        </div>
+      </div>
+      
       </div>
     </section>
 
@@ -542,7 +547,7 @@
 
       <div id="project-full">
         <!-- Page 1 -->
-        <article class="project-card project-content">
+        <!-- <article class="project-card project-content">
           <div class="project-image project-image-one">
             <img src="./img/projects/Jiodigitalclone.png" alt="reliancedigital clone" />
             <a class="btn btn-one" href="https://stirring-jelly-9ed478.netlify.app/" target="_blank">Preview Link</a>
@@ -557,9 +562,7 @@
             </p>
             <div class="project-info">
               <div class="stack" class="project-tech-stack">
-                <!-- <small class="language">HTML5</small>
-                <small class="language">SASS</small>
-                <small class="language">JavaScript</small> -->
+               
                 <img src="./images/html" alt="html">
                 <img src="./images/css.png" alt="css">
                 <img width="60px" src="./images/js.png" alt="">
@@ -573,7 +576,7 @@
               </div>
             </div>
           </div>
-        </article>
+        </article> -->
 
 
 
@@ -723,6 +726,44 @@
                   id="btn-git"><i class="fab fa-github"></i></a>
                 <a class="project-deployed-link" href="https://converthecode.netlify.app/" target="_blank"
                   id="btn-net"><i class="fas fa-external-link-alt"></i></a>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- mai.com -->
+        <article class="project-card project-content">
+          <div class="project-image project-image-three">
+            <img src="./img/projects/mapi.png" alt=" time tracker Project" />
+            <a class="btn btn-four" href="https://mymapi.netlify.app/" target="_blank">Preview
+              Link</a>
+          </div>
+
+          <div class="card-content">
+            <h2 class="project-title">Mapi.com</h2>
+            <p class="project-description">
+              Users can manage their work-related tasks on Mapi.com and view the results in a variety of formats, including cards, pie, graphs, and tables. 
+            </p>
+            <div class="project-info">
+              <div class="stack" class="project-tech-stack">
+                <img src="./images/html" alt="html">
+                <img src="./images/css.png" alt="css">
+                <img width="70px" src="./images/js.png" alt="">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" alt="">
+                <img src="./images/pyt.jpeg" alt="python" style="background-color: transparent;">
+                <img src="./images/flask.png" alt="flask">
+              
+        
+               
+              </div>
+
+              <div class="project-links">
+                <a class="project-github-link" href="https://github.com/8309h/mapi.com" target="_blank"
+                  id="btn-git"><i class="fab fa-github"></i></a>
+                <a class="project-deployed-link" href="https://mymapi.netlify.app/" target="_blank"
+                  id="btn-net"><i class="fas fa-external-link-alt"></i></a>
+                <a class="project-deployed-link" href="https://drive.google.com/file/d/1aHdsWF_Hb8gaOGggvu23yE7wdE4MYH-B/view?usp=sharing" target="_blank"
+                  id="btn-net"><i class="fas fa-external-link-alt"></i></a>  
               </div>
             </div>
           </div>
