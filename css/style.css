@@ -1091,13 +1091,16 @@ form {
   border-radius: 5px;
   background-color: var(--bg-secondary-color);
   /* border: 1px solid var(--color-3); */
-  border: none;
+  border: 1px solid yellowgreen;
+
+
 }
 
 .tag-btn:is(:hover, :focus-visible) {
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   background-clip: padding-box, border-box;
-  border-color: transparent;
+  /* border-color: transparent; */
+  border: 1px solid rgb(0, 217, 255);
   transform: translateY(-10px);
   transition: all 5ms;
 }
@@ -1137,7 +1140,7 @@ form {
 }
 
 .skills-card.tag-btn:hover {
-  transform: scale(1.3);
+  transform: scale(1.1);
 }
 
 
