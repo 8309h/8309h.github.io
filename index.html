@@ -2,977 +2,694 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="keywords" content="Full Stack Developer" />
-  <meta http-equiv="X-UA Compatible" content="ie=edge" />
-  <link rel="icon" href="./img/favicon/profile-pic (1).png" type="image/icon type">
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <link rel="icon" href="./assets/images/logo-top.png" type="image/icon type">
   <title>Harshal Wagh | Portfolio Website</title>
+  <meta name="title" content="harshal-Portfolio" />
+  <meta name="description"
+    content="Welcome to my portfolio! I'm Harshal, a dedicated Backend Developer. Browse through my work samples and contact me if you're seeking a capable developer for your team" />
 
-  <!-- Style -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
-    integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <link rel="stylesheet" href="css/style.css" />
-  <link rel="stylesheet" href="css/global.css" />
+             <!----------------------- Github Calender here ----------------------------------------------------->
+             <!-- need changesh contribution calender this is getting by github auto--->
 
+  <script src="https://unpkg.com/github-calendar@latest/dist/github-calendar.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/gh/sallar/github-contributions-chart@latest/dist/github-contributions-chart.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/github-calendar/1.2.0/dist/github-calendar.min.js"></script>
 
-  <!-- script -->
-  <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
-  <link rel="shortcut icon" type="image/png"
-    href="images/c-alphabet-letter-logo-for-business-and-company-with-wings-and-black-and-white-grey-color-corporate-brading-and-lettering-icon-with-simple-design-vector.webp">
+  <link rel="stylesheet" href="https://unpkg.com/github-calendar@latest/dist/github-calendar-responsive.css" />
+ 
+  
+  <!-- <------------------------------------------------ box icon ------------------------------------------------------------->
 
-  <link rel="manifest" href="img/favicon/site.webmanifest" />
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+           <!--------------------------------------------------- css links ------------------------------------------------------------->
+  <link rel="stylesheet" href="./css/style.css">
+  
+
+<!------------------------------- images here----------------- -->
+<link rel="preload" as="image" href="https://i.ibb.co/wgYkv8x/Screenshot-1481.png" />
+<link rel="preload" as="image" href="./images/pattern-2.svg" />
+<link rel="preload" as="image" href="./images/pattern-3.svg" />
+
+<link rel="shortcut icon" href="./images/img_56497.webp" type="image/x-icon">
+<link rel="manifest" href="img/favicon/site.webmanifest" />
+  
 </head>
 
-<body id="home">
-  <header id="hero">
+<body id="top">
+  <!---------------------------------------------------nav bar ------------------------------------------------------------->
+          <header class="header">
+            <a href="#home" class="logo"><img src="./assets/images/logo-top.png" alt=""></a>
+            <i class='bx bx-menu' id="menu-icon"></i>
 
-    <nav id="nav-menu" id="navbar-scroll" class="navbar">
-      <!-- <blockquote class="alert">
-        <span>Welcome To My Portfolio</span>
+    
+    <nav id="nav-menu">
 
-      </blockquote> -->
-      <h1 class="logo">
-        <a href="#"><img src="./img/favicon/profile-pic (1).png" alt="Harshal logo" /></a>
-      </h1>
-      <div id="menu">
-        <ul class="nav-menu">
-          <li class="nav-items">
-            <a href="#home" class="nav-link home"><i class="nav-icon fas fa-home"></i>HOME</a>
-          </li>
-          <li class="nav-items">
-            <a href="#about" class="nav-link about"><i class="nav-icon fas fa-user"></i>ABOUT</a>
-          </li>
-          <!-- <li class="nav-items">
-            <a href="#skills" class="nav-link skills"><i class="nav-icon fas fa-cog"></i>SKILLS</a>
-          </li> -->
-          <li class="nav-items">
-            <a href="#skills" class="nav-link skills"><i class="nav-icon fas fa-cog"></i>SKILLS</a>
-          </li>
-          <li class="nav-items">
-            <a href="#github" class="nav-link github"><i class="nav-icon fab fa-github"></i>GITHUB</a>
-          </li>
-          <li class="nav-items">
-            <a href="#projects" class="nav-link projects"><i class="nav-icon fas fa-code"></i>PROJECTS</a>
-          </li>
-          <li class="nav-items">
-            <a href="#contact" class="nav-link contact"><i class="nav-icon fas fa-address-book"></i>CONTACT</a>
-          </li>
-          <li id="resume-button-1" class=" nav-items nav-link resume">
-            <a class="harsh_res" href="./resume/Harshal-Wagh-Resume.pdf" target="_blank" id="resume-link-1"
-              download="Harshal-Wagh-Resume" style="font-weight: bold;"><i class='bx bxs-download'></i> RESUME
-            </a>
-          </li>
-          <div class="theme-switch-wrapper">
-            <label class="theme-switch" for="checkbox">
-              <input type="checkbox" id="checkbox" />
-              <div class="slider round"></div>
-            </label>
-          </div>
-        </ul>
-        <div class="hamburger">
-          <span class="bar"></span>
-          <span class="bar"></span>
-          <span class="bar"></span>
-        </div>
-      </div>
+      <a class="nav-link home" href="#home"><i class='bx bxs-home'></i>Home</a>
+      <a class="nav-link about" href="#about"><i class='bx bxs-user'></i>About</a>
+      <a class="nav-link skills" href="#skills"><i class='bx bx-cog'></i>Skills</a>
+      <!-- <a class="nav-link skills" href="#github"><i class='bx bxl-github'></i>Github</a> -->
+      <a class="nav-link projects" href="#projects"><i class='bx bxl-codepen'></i> Projects</a>
+      <a class="nav-link contact" href="#contact"><i class='bx bxs-contact'></i>Contact</a>
+
+
+      <li id="resume-button-1" class="nav-link resume"> 
+        <a  href="./resume/Harshal-Wagh-Resume.pdf" target="_blank" id="resume-link-1"
+          download="Harshal-Wagh-Resume.pdf"><i class='bx bxs-download'></i>Resume
+        </a>
+      </li>
+
+
     </nav>
-
-    <section id="home" class="home section content container">
-      <div class="content-text">
-        <span>
-          <h1>Hello, It's Me <span class="underline"></span></h1>
-        </span>
-        <div class="kodfun" class="text-secondary">
-          <span id="user-detail-name" style="--x:1">Harshal Kailas Wagh</span>
-        </div>
-
-        <h2><span class="auto-type"></span></h2>
-
-        <p id="sumary" id="user-detail-skill"> Passionate full stack web developer with expertise in creating dynamic
-          and responsive web applications. <br>Always open to take challenges.
-        </p>
-        <ul id="resume-button-2">
-          <a href="./resume/Harshal-Wagh-Resume.pdf" target="_blank" id="resume-link-2" class="btn"
-            download="Harshal-Wagh-Resume">RESUME </a>
-        </ul>
-
-      </div>
-      <div class="content-image">
-        <!-- <div class="overlay-icons"></div> -->
-        <img class="home-img" src="./images/WhatsApp Image 2023-06-21 at 1.18.20 PM.jpeg" alt="Harshal" />
-      </div>
-    </section>
   </header>
-  <main>
-    <!---------------------- -----------About Section ---------------------------------------->
+  
 
-    <section id="about" class="about section">
-      <p id="user-detail-intro" style="display: none">
-        "JavaScript","MongoDB","NodeJS","HTML","CSS","Express","socket.io",
-      </p>
-      <h2 class="head-text section__title">
-        ABOUT ME<span class="underline underline-primary"></span>
-      </h2>
-      <span class="section__subtitle"></span>
+  
+  <!--------------------------------------------  NAV Ends here--------------------------------------------------------------->
 
-      <div class="about__container container">
 
-        <div class="about__data" style="display: flex; gap: 10px;">
-          <div>
-             <img width="50%" src="../img/images/Hand-coding.png" alt="">
-          </div>
-          <div><p class="about__description" id="user-detail-intro">
-            Hi! I'm Harshal Kailas Wagh <span style="display: none;">About</span>
-            <br /><br />
-            A Full Stack Web Developer specialized in Back-End Development. <br><br>
 
-            Solution-driven Full Stack Web Developer skilled in Nodejs.
-            Having a deep passion for building web applications and confident enough to learn new things with a curious
-            mind,
-            an absolute passion for coding and the ability to write clean, efficient and production-ready code.
-            Looking forward to taking up a challenging and responsible role within an organization as a full-stack web
-            developer. <br><br> I utilized my time in : 
-          </p>
-          <!-- <p style="color: var(--primary-color);">
-            Technologies and tools I'm currently exploring and interested about.
-          </p>
+  <!-------------------------------------------- Main home page start here--------------------------------------------------------------->
 
-          <ul class="language">
 
-            <li>HTML5</li>
-            <li>CSS3</li>
-            <li>JavaScript</li>
-            <li>Node.js</li>
-            <li>ExpressJs</li>
-            <li>Mongo DB</li>
-            <li>Mongoose</li>
-            <li>Postman</li>
-            <li>Rest API</li>
-            <li>SQL</li>
-           
-            <li>Canva</li>
-            <li>Bootstrap</li>
+  <section class="home" id="home">
 
-          </ul> -->
+    <div style="margin: auto;" class="home-content"  >
+      <h3>Hello, it's Me</h3>
 
-          <div class="about__info">
-            <div>
-              <span class="about__info-title">1200+</span>
-              <span class="about__info-name">Hours of Coding</span>
-            </div>
+      <p id="user-detail-name" class="kodfun" style="font-size: 3.0rem;"><span style="--x:1">Harshal wagh</span></p>
+     
+      <h3 >And I'm a <br><span  class="multiple-text"></span></h3>
 
-            <div>
-              <span class="about__info-title">500+</span>
-              <span class="about__info-name">DSA Problems
-              </span>
-            </div>
-            <div>
-              <span class="about__info-title">20+</span>
-              <span class="about__info-name">Completed Project</span>
-            </div>
-          </div></div>
-         
-          
-
-        </div>
-      </div>
-    </section>
-
-    <!--------------------------------Skills Section -------------------------------->
-    <section id="skills" class="nav-link-skills skills">
-
-      <div class="main-text">
-        <h2 class="head-text">
-          MY SKILLS<span class="underline underline-primary"></span>
-        </h2>
-
-      </div>
-      <div class="container tags">
-
-        <ul class="grid-list">
-          <li>
-            <button class="skills-card tag-btn">
-              <img src="./images/html" class="skills-card-img" width="32" height="32" loading="lazy" alt="HTML" />
-
-              <p class="skills-card-name">HTML</p>
-            </button>
-          </li>
-
-          <li>
-            <button class="skills-card tag-btn">
-              <img src="./images/css.png" class="skills-card-img" width="32" height="32" loading="lazy" alt="CSS" />
-
-              <p class="skills-card-name">CSS</p>
-            </button>
-          </li>
-
-          <li>
-            <button class="skills-card tag-btn">
-              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
-                class="skills-card-img" width="32" height="32" loading="lazy" alt="JavaScript" />
-
-              <p class="skills-card-name">JavaScript</p>
-            </button>
-          </li>
-          <li>
-            <button class="skills-card tag-btn">
-              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg"
-                class="skills-card-img" width="32" height="32" loading="lazy" alt="JavaScript" />
-
-              <p class="skills-card-name">React.js</p>
-            </button>
-          </li>
-
-          <li>
-            <button class="skills-card tag-btn">
-              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg"
-                class="skills-card-img" width="32" height="32" loading="lazy" alt="NodeJS" />
-
-              <p class="skills-card-name">NodeJS</p>
-            </button>
-          </li>
-
-          
-          <li>
-            <button class="skills-card tag-btn">
-              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/angular/angular-original.svg"
-                class="skills-card-img" width="32" height="32" loading="lazy" alt="NodeJS" />
-
-              <p class="skills-card-name">Angular.js</p>
-            </button>
-          </li>
-
-          <li>
-            <button class="skills-card tag-btn">
-              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg"
-                class="skills-card-img" width="32" height="32" loading="lazy" alt="Express" />
-
-              <p class="skills-card-name">Express</p>
-            </button>
-          </li>
-
-          <li>
-            <button class="skills-card tag-btn">
-              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg"
-                class="skills-card-img" width="32" height="32" loading="lazy" alt="MongoDB" />
-
-              <p class="skills-card-name">MongoDB</p>
-            </button>
-          </li>
-
-          <li>
-            <button class="skills-card tag-btn">
-              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/socketio/socketio-original.svg"
-                class="skills-card-img" width="32" height="32" loading="lazy" alt="Mongoose" />
-
-              <p class="skills-card-name">Socket.io</p>
-            </button>
-          </li>
-
-          <li>
-            <button class="skills-card tag-btn">
-              <img class="skills-card-img"
-                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" width="32" height="32"
-                loading="lazy" />
-
-              <p class="skills-card-name">MySQL</p>
-            </button>
-          </li>
-          <li>
-            <button class="skills-card tag-btn">
-              <img src="./images/redis.svg" class="skills-card-img" width="32" height="32" loading="lazy" alt="GIT" />
-
-              <p class="skills-card-name">Redis</p>
-            </button>
-          </li>
-          <li>
-            <button class="skills-card tag-btn">
-              <img class="skills-card-img" src="./images/postman-removebg-preview.png" width="32" height="32"
-                loading="lazy" style="background: transparent;" />
-
-              <p class="skills-card-name">Postman</p>
-            </button>
-          </li>
-
-          <li>
-            <button class="skills-card tag-btn">
-              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" width="32" height="32"
-                loading="lazy" class="skills-card-img" />
-
-              <p class="skills-card-name">GIT</p>
-            </button>
-          </li>
-
-          <!-- <li>
-            <button class="skills-card tag-btn">
-              <img class="skills-card-img" src="./images/npm.svg" width="32" height="32" loading="lazy" alt="NPM" />
-
-              <p class="skills-card-name">NPM</p>
-            </button>
-          </li> -->
-
-          <li>
-            <button class="skills-card tag-btn">
-              <img class="skills-card-img"
-                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg" width="32"
-                height="32" loading="lazy" />
-
-              <p class="skills-card-name">VSCode</p>
-            </button>
-          </li>
-
-          <li>
-            <button class="skills-card tag-btn">
-              <img class="skills-card-img"
-                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg" width="32"
-                height="32" loading="lazy" />
-
-              <p class="skills-card-name">Bootstrap </p>
-            </button>
-          </li>
-          <li>
-            <button class="skills-card tag-btn">
-              <img class="skills-card-img" src="./images/canva.svg" width="32" height="32" loading="lazy" />
-
-              <p class="skills-card-name">Canva</p>
-            </button>
-          </li>
-          <li>
-            <button class="skills-card tag-btn">
-              <img class="skills-card-img" src="./images/netlify-removebg-preview.png" width="32" height="32"
-                loading="lazy" />
-
-              <p class="skills-card-name">Netlify</p>
-            </button>
-          </li>
-          <li>
-            <button class="skills-card tag-btn">
-              <img class="skills-card-img" src="./images/cyclic.png" width="32" height="32" loading="lazy" />
-
-              <p class="skills-card-name">Cyclic</p>
-            </button>
-          </li>
-          <li>
-            <button class="skills-card tag-btn">
-              <img class="skills-card-img" src="./images/pyt.jpeg" width="32" height="32"
-                loading="lazy" />
-
-              <p class="skills-card-name">Python</p>
-            </button>
-          </li>
-          <li>
-            <button class="skills-card tag-btn">
-              <img class="skills-card-img" src="./images/flask.png" width="32" height="32"
-                loading="lazy" />
-
-              <p class="skills-card-name">Flask</p>
-            </button>
-          </li>
-        </ul>
+      <div class="social-media">
+        <a href="https://github.com/8309h"><i class='bx bxl-github'></i></a>
+        <a href="https://www.linkedin.com/in/waghharshal/" target="_blank"><i class='bx bxl-linkedin'></i></a>
+        <a href="https://www.instagram.com/harshalkwagh/" target="_blank"><i class='bx bxl-instagram-alt'></i></a>
       </div>
 
+      <li id="resume-button-2">
+        <a href="./resume/Harshal-Wagh-Resume.pdf" target="_blank" id="resume-link-2" class="button"
+          download="Harshal-Wagh-Resume.pdf">Resume <i class='bx bxs-download'></i></a>
+      </li>
 
 
-    </section>
-    <!------------------------------ Technologies Section------------------------------------->
-    <!-- <section id="skills2">
+    </div>
 
-      <div id="skills2" class="container2">
-        <div class="skills2">
-          <div class="box-header2">
-            <h3 class="text-primary head-text">
-              Benefits<span class="underline underline-primary"></span>
-            </h3>
-            <h3>Why should you hire me?</h3>
-            <p>
-              When buidling or cloning web projects, I strongly adhere to
-              these principles which make my websites both unique and
-              scaleable.
-            </p>
-          </div>
-          <div class="box-container2">
-            <div class="card">
-              <span class="fas fa-search color-1"></span>
-              <h3>DSA</h3>
-              <p>
-                I am the person who always searching for the optimise way of doing my code .
-                In that critical thinking and Problem solving skills help me a lots.
-              </p>
-            </div>
-            <div class="card">
-              <span class="fas fa-mobile-alt color-2"></span>
-              <h3>Responsive Design</h3>
-              <p>
-                I am passionate about responsiveness and making the websites I
-                build look good on different devices, browsers and cross
-                platforms using both "mobile first" approach and desktop
-                "media queries"
-              </p>
-            </div>
-            <div class="card">
-              <span class="fas fa-code color-3"></span>
-              <h3>Reusable & Minimal code</h3>
-              <p>
-                I try my best to write as minimal code as possible by using
-                tools like CSS Variables and writing custom utility classes.
-              </p>
-            </div>
-            <div class="card">
-              <span class="fas fa-palette color-4"></span>
-              <h3>Great UI/UX & Accessibility</h3>
-              <p>
-                I have a strong eye for designs, which allows me to transform
-                templates into pixel-perfect code while making it accessible
-                to all users. Principles I picked up from solving various
-                <a href="https://www.frontendmentor.io/challenges" class="link-style" target="_blank"
-                  rel="no-referrer no-opener">frontendmentor</a>
-                challenges.
-              </p>
-
-              <p>
-                I have a keen eye for design,
-                 enabling me to translate templates into pixel-perfect code. 
-                 I prioritize creating intuitive user interfaces
-                  while ensuring accessibility for all users.
-                   I have gained valuable experience by solving 
-                   various challenges on <a href="https://www.frontendmentor.io/challenges" class="link-style" target="_blank" rel="no-referrer no-opener">Frontend Mentor</a>.
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section> -->
-    <!-- <section id="skills2">
-      <div id="skills2" class="container2">
-        <div class="skills2">
-          <div class="box-header2">
-            <h3 class="text-primary head-text">
-              Benefits<span class="underline underline-primary"></span>
-            </h3>
-            <h3>Why should you hire me?</h3>
-            <p>
-              When building or cloning web projects, I strongly adhere to these principles which make my websites both
-              unique and scalable.
-            </p>
-          </div>
-          <div class="box-container2">
-            <div class="card">
-              <span class="fas fa-search color-1"></span>
-              <h3>Problem Solving</h3>
-              <p>
-                I am a dedicated problem solver, constantly searching for the most optimal ways to write code. My strong
-                critical thinking skills enable me to find efficient solutions to complex problems.
-              </p>
-            </div>
-            <div class="card">
-              <span class="fas fa-mobile-alt color-2"></span>
-              <h3>Responsive Design</h3>
-              <p>
-                I am passionate about creating responsive websites that look stunning on various devices, browsers, and
-                platforms. I follow a "mobile-first" approach and utilize desktop media queries to ensure an exceptional
-                user experience across all screen sizes.
-              </p>
-            </div>
-            <div class="card">
-              <span class="fas fa-code color-3"></span>
-              <h3>Minimal and Reusable Code</h3>
-              <p>
-                I strive to write clean and concise code by leveraging tools like CSS Variables and creating custom
-                utility classes. This approach allows me to develop websites with minimal code, making them easier to
-                maintain and scale in the future.
-              </p>
-            </div>
-            <div class="card">
-              <span class="fas fa-palette color-4"></span>
-              <h3>Great UI/UX & Accessibility</h3>
-              <p>
-                I have a keen eye for design,
-                enabling me to translate templates into pixel-perfect code.
-                I prioritize creating intuitive user interfaces
-                while ensuring accessibility for all users.
-                I have gained valuable experience by solving
-                various challenges on <a href="https://www.frontendmentor.io/challenges" class="link-style"
-                  target="_blank" rel="no-referrer no-opener">Frontend Mentor</a>.
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section> -->
-
-    <!------------------------------------ GitHub----------------------------------- -->
-
-    <section id="gittt">
-      <div class="max-width nav-link github" id="github">
-        <div class="main-text">
-
-          <h2 class="head-text">
-            GITHUB CALENDER<span class="underline underline-primary"></span>
-          </h2>
-
-        </div>
-        <div id="stat">
-          <div>
-            <img class="ht1" id="github-stats-card"
-              src='https://github-readme-stats.vercel.app/api?username=8309h&count_private=true'>
-          </div>
-          <div>
-            <img class="ht1" id="github-top-langs"
-              src='https://github-readme-stats.vercel.app/api/top-langs/?username=8309h&theme=outrun'>
-          </div>
-          <div>
-            <img class="ht1" id="github-streak-stats"
-              src='https://github-readme-streak-stats.herokuapp.com?user=8309h&theme=radical&hide_border=true&border_radius=6.5&date_format=M%20j%5B%2C%20Y%5D'>
-          </div>
-
-          <!-- <div class="react-activity-calendar">
-              <img style="display: block; margin: auto; margin-top: 40px; width: 100%;"
-                src="https://ghchart.rshah.org/8309h" alt="Shahid77137's Github chart" />
-            </div> -->
-        </div>
-
-
-        <div id="calendar_harsh">
-          <div class="calendar react-activity-calendar" id="calendar">
-              Loading the data just for you.
-          </div>
-      
-          <script src="https://unpkg.com/github-calendar@latest/dist/github-calendar.min.js"></script>
-          <link rel="stylesheet" href="https://unpkg.com/github-calendar@latest/dist/github-calendar-responsive.css" />
-      
-          <script>
-              GitHubCalendar(".calendar", "8309h", {
-                  responsive: true,
-                  global_stats: false,
-                  tooltips: true
-              });
-          </script>
-      </div>
-      
-      </div>
-    </section>
-
-
-
-    <!---------------------------------- Projects Section------------------------------------>
-    <section id="projects" class="container" class="nav-link projects" id="nav-link-projects">
-      <h2 class="head-text">
-        FEATURED PROJECTS<span class="underline underline-secondary"></span>
-      </h2>
-
-      <div id="project-full">
-        <!-- Page 1 -->
-        <!-- <article class="project-card project-content">
-          <div class="project-image project-image-one">
-            <img src="./img/projects/Jiodigitalclone.png" alt="reliancedigital clone" />
-            <a class="btn btn-one" href="https://stirring-jelly-9ed478.netlify.app/" target="_blank">Preview Link</a>
-          </div>
-
-          <div class="card-content">
-            <h2 class="project-title">Jio digital Clone</h2>
-            <p class="project-description">
-              This is a static clone of <a href="https://www.reliancedigital.in/">Jio digital</a> is the ecommerce
-              site which deals with the elctronics products
-
-            </p>
-            <div class="project-info">
-              <div class="stack" class="project-tech-stack">
-               
-                <img src="./images/html" alt="html">
-                <img src="./images/css.png" alt="css">
-                <img width="60px" src="./images/js.png" alt="">
-              </div>
-
-              <div class="project-links">
-                <a class="project-github-link" href="https://github.com/8309h/lewd-question-7867" target="_blank"
-                  id="btn-git"><i class="fab fa-github"></i></a>
-                <a class="project-deployed-link" href="https://darling-crumble-912b0e.netlify.app/" target="_blank"
-                  id="btn-net"><i class="fas fa-external-link-alt"></i></a>
-              </div>
-            </div>
-          </div>
-        </article> -->
-
-
-        <article class="project-card project-content">
-          <div class="project-image project-image-one">
-            <img src="./img/projects/speech-converter.png" alt="Transformed minds project" />
-            <a class="btn btn-two" href="https://speech-to-text-convertor-one.vercel.app/" target="_blank">Preview Link</a>
-          </div>
-
-          <div class="card-content">
-            <h2 class="project-title">Speech Converter</h2>
-            <p class="project-description">
-
-
-            This is the speech to text convertor app. whatever you say it is converted it into the text and allows you to copy paste at another place.
-
-            </p>
-            <div class="project-info">
-              <div class="stack" class="project-tech-stack">
-                <img src="./images/html" alt="html">
-                <img src="./images/css.png" alt="css">
-                <img  src="./images/js.png" alt="">
-                <img  src = "./images/react.png" alt="">
-              </div>
-
-              <div class="project-links">
-                <a class="project-github-link" href="https://github.com/8309h/speech-to-text-convertor" target="_blank"
-                  id="btn-git"><i class="fab fa-github"></i></a>
-                <a class="project-deployed-link" href="https://speech-to-text-convertor-one.vercel.app/" target="_blank"
-                  id="btn-net"><i class="fas fa-external-link-alt"></i></a>
-              </div>
-            </div>
-          </div>
-        </article>
-
-
-
-
-        <!-- Page 2 -->
-        <article class="project-card project-content">
-          <div class="project-image project-image-one">
-            <img src="./img/projects/Crate&barrel.png" alt="Transformed minds project" />
-            <a class="btn btn-two" href="https://creative-zabaione-caf0fa.netlify.app/" target="_blank">Preview Link</a>
-          </div>
-
-          <div class="card-content">
-            <h2 class="project-title">Home Decor</h2>
-            <p class="project-description">
-
-
-              Home Decor is the clone of <a href="https://www.crateandbarrel.com/" target="_blank">Crate&Barrel</a> is
-              the shopping website
-              which sells the household decorating and daily using products.
-
-            </p>
-            <div class="project-info">
-              <div class="stack" class="project-tech-stack">
-                <img src="./images/html" alt="html">
-                <img src="./images/css.png" alt="css">
-                <img width="60px" src="./images/js.png" alt="">
-                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg" alt="">
-              </div>
-
-              <div class="project-links">
-                <a class="project-github-link" href="https://github.com/8309h/eminent-trucks-727" target="_blank"
-                  id="btn-git"><i class="fab fa-github"></i></a>
-                <a class="project-deployed-link" href="https://creative-zabaione-caf0fa.netlify.app/" target="_blank"
-                  id="btn-net"><i class="fas fa-external-link-alt"></i></a>
-              </div>
-            </div>
-          </div>
-        </article>
-
-        <!-- Page 3 -->
-        <article class="project-card project-content">
-          <div class="project-image project-image-two">
-            <img src="./img/projects/modesens.png" alt="skeep project" />
-            <a class="btn btn-three" href="https://melodious-daffodil-f1bcea.netlify.app/" target="_blank">Preview
-              Link</a>
-          </div>
-
-          <div class="card-content">
-            <h2 class="project-title">Shop bag</h2>
-            <p class="project-description">
-              It is the cone of <a href="https://modesens.com/" target="_blank">modesens</a> is the US based website
-              which give us the cloths in low price as
-              compared to the other markets.
-
-            </p>
-            <div class="project-info">
-              <div class="stack" class="project-tech-stack">
-
-                <img src="./images/html" alt="html">
-                <img src="./images/css.png" alt="css">
-                <img width="60px" src="./images/js.png" alt="">
-                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg" alt="">
-                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" alt="">
-                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg" alt="">
-                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" alt="">
-               
-              </div>
-
-              <div class="project-links">
-                <a class="project-github-link" href="https://github.com/8309h/wonderful-country-7692" target="_blank"
-                  id="btn-git"><i class="fab fa-github"></i></a>
-                <a class="project-deployed-link" href="https://melodious-daffodil-f1bcea.netlify.app/" target="_blank"
-                  id="btn-net"><i class="fas fa-external-link-alt"></i></a>
-              </div>
-            </div>
-          </div>
-        </article>
-
-
-        <!-- page4 -->
-
-
-        <article class="project-card project-content">
-          <div class="project-image project-image-three">
-            <img src="./img/projects/time tracker.png" alt=" time tracker Project" />
-            <a class="btn btn-four" href="https://storied-paprenjak-8f2e60.netlify.app/" target="_blank">Preview
-              Link</a>
-          </div>
-
-          <div class="card-content">
-            <h2 class="project-title">Time Tracker</h2>
-            <p class="project-description">
-              Time tracker is the time managmnet website which is build from the scratch by the
-              team of four developers in the time soan of four days.
-            </p>
-            <div class="project-info">
-              <div class="stack" class="project-tech-stack">
-                <img src="./images/html" alt="html">
-                <img src="./images/css.png" alt="css">
-                <img width="60px" src="./images/js.png" alt="">
-                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg" alt="">
-                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" alt="">
-                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg" alt="">
-                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" alt="">
-                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/socketio/socketio-original.svg" alt="">
-                <span>Node-mailer</span>
-                
-              </div>
-
-              <div class="project-links">
-                <a class="project-github-link" href="https://github.com/Smoke221/truculent-trains-1017" target="_blank"
-                  id="btn-git"><i class="fab fa-github"></i></a>
-                <a class="project-deployed-link" href="https://storied-paprenjak-8f2e60.netlify.app/" target="_blank"
-                  id="btn-net"><i class="fas fa-external-link-alt"></i></a>
-              </div>
-            </div>
-          </div>
-        </article>
-
-        <article class="project-card project-content">
-          <div class="project-image project-image-one">
-            <img src="./img/projects/Screenshot (195)2.png" alt="Transformed minds project" />
-            <a class="btn btn-two" href="https://converthecode.netlify.app/" target="_blank">Preview Link</a>
-          </div>
-
-          <div class="card-content">
-            <h2 class="project-title">Code Converter</h2>
-            <p class="project-description">
-
-
-              Code Converter is the application with the help of this user can covert the code of one language into another language also it is providing the code debug and quality check functionality. Its the project build with the help of CHATGPT API. <a href="https://converthecode.netlify.app/" target="_blank">Code Converter</a> is
-             
-
-            </p>
-            <div class="project-info">
-              <div class="stack" class="project-tech-stack">
-                <img src="./images/html" alt="html">
-                <img src="./images/css.png" alt="css">
-                <img width="70px" src="./images/js.png" alt="">
-                <img src="./images/node.png" alt="css">
-                <img src="./images/express.png" alt="css">
-                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg" alt="">
-              </div>
-
-              <div class="project-links">
-                <a class="project-github-link" href="https://github.com/8309h/CodeConvertor" target="_blank"
-                  id="btn-git"><i class="fab fa-github"></i></a>
-                <a class="project-deployed-link" href="https://converthecode.netlify.app/" target="_blank"
-                  id="btn-net"><i class="fas fa-external-link-alt"></i></a>
-              </div>
-            </div>
-          </div>
-        </article>
-
-        <!-- mai.com -->
-        <article class="project-card project-content">
-          <div class="project-image project-image-three">
-            <img src="./img/projects/mapi.png" alt=" time tracker Project" />
-            <a class="btn btn-four" href="https://mymapi.netlify.app/" target="_blank">Preview
-              Link</a>
-          </div>
-
-          <div class="card-content">
-            <h2 class="project-title">Mapi.com</h2>
-            <p class="project-description">
-              Users can manage their work-related tasks on Mapi.com and view the results in a variety of formats, including cards, pie, graphs, and tables. 
-            </p>
-            <div class="project-info">
-              <div class="stack" class="project-tech-stack">
-                <img src="./images/html" alt="html">
-                <img src="./images/css.png" alt="css">
-                <img width="70px" src="./images/js.png" alt="">
-                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" alt="">
-                <img src="./images/pyt.jpeg" alt="python" style="background-color: transparent;">
-                <img src="./images/flask.png" alt="flask">
-              
-        
-               
-              </div>
-
-              <div class="project-links">
-                <a class="project-github-link" href="https://github.com/8309h/mapi.com" target="_blank"
-                  id="btn-git"><i class="fab fa-github"></i></a>
-                <a class="project-deployed-link" href="https://mymapi.netlify.app/" target="_blank"
-                  id="btn-net"><i class="fas fa-external-link-alt"></i></a>
-                <a class="project-deployed-link" href="https://drive.google.com/file/d/1aHdsWF_Hb8gaOGggvu23yE7wdE4MYH-B/view?usp=sharing" target="_blank"
-                  id="btn-net"><i class="fas fa-external-link-alt"></i></a>  
-              </div>
-            </div>
-          </div>
-        </article>
-
+    <div class="home-image">
+       <img src="./assets/WhatsApp Image 2024-03-18 at 3.28.49 PM.jpeg" alt="photo">
        
+    </div>
+
+  
+    <!-- </div> -->
+  </section>
+
+<!---------------------------------------------- About section start---------------------------------->
+<section id="about" class="about section">
+
+  <h2 class="heading"><i class='bx bxs-user'></i>About
+    <span>Me!</span>
+    <div class="about-content">
+      <h3>I'm <span>Harshal</span></h3>
+      <h3>Full Stack Web Developer</h3>
+      <p id="user-detail-intro">
+        I am a Full-Stack developer located in Pune,
+        Maharashtra, India, with a passion for coding.
+    
+        As a proficient Node developer, I have a strong grasp of full-stack development concepts. I specialize in using Node.js, Express, and MongoDB to craft dynamic web applications and websites. My tech stack also includes proficiency in HTML, CSS, and JavaScript to ensure pixel-perfect frontend experiences.
+    
+        What sets me apart is my expertise in Generative AI. I thrive on swiftly mastering new technology stacks and leveraging Generative AI to enhance user experiences, push boundaries, and create truly innovative solutions.
+    
+        My commitment to constant improvement aligns seamlessly with my prompt engineering skills, making me an highly valuable asset to any project or team.
+        <br>
+        Let's embark on a journey of innovation together!
+    </p>
+    
+</div>
+</section>
+
+<!------------------------------------------ skills starts here------------>
+ 
+<section id="skills" class="skills">
+  <div class="container tags" style="margin-bottom:10% ;">
+    <h2 class="heading"><i class='bx bx-cog'></i>Skills &
+      <span>Abilities</span>
+    </h2>
+
+    <ul class="grid-list">
+      <li>
+        <button class="skills-card tag-btn">
+          <img src="./css/images/html" class="skills-card-img" width="32" height="32" loading="lazy" alt="HTML" />
+
+          <p class="skills-card-name">HTML</p>
+        </button>
+      </li>
+
+      <li>
+        <button class="skills-card tag-btn">
+          <img src="./css/images/css.png" class="skills-card-img" width="32" height="32" loading="lazy" alt="CSS" />
+
+          <p class="skills-card-name">CSS</p>
+        </button>
+      </li>
+
+      <li>
+        <button class="skills-card tag-btn">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
+            class="skills-card-img" width="32" height="32" loading="lazy" alt="JavaScript" />
+
+          <p class="skills-card-name">JavaScript</p>
+        </button>
+      </li>
+
+      <li>
+        <button class="skills-card tag-btn">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg"
+            class="skills-card-img" width="32" height="32" loading="lazy" alt="NodeJS" />
+
+          <p class="skills-card-name">NodeJS</p>
+        </button>
+      </li>
+
+      <li>
+        <button class="skills-card tag-btn">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg"
+            class="skills-card-img" width="32" height="32" loading="lazy" alt="Express" />
+
+          <p class="skills-card-name">Express</p>
+        </button>
+      </li>
+
+      <li>
+        <button class="skills-card tag-btn">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg"
+            class="skills-card-img" width="32" height="32" loading="lazy" alt="MongoDB" />
+
+          <p class="skills-card-name">MongoDB</p>
+        </button>
+      </li>
+
+      <li>
+        <button class="skills-card tag-btn">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/socketio/socketio-original.svg"
+            class="skills-card-img" width="32" height="32" loading="lazy" alt="Mongoose" />
+
+          <p class="skills-card-name">Socket.io</p>
+        </button>
+      </li>
+      <li>
+        <button class="skills-card tag-btn">
+          <img class="skills-card-img" src="./css/images/react.png" width="32" height="32" loading="lazy" />
+
+          <p class="skills-card-name">React</p>
+        </button>
+      </li>
+      <li>
+        <button class="skills-card tag-btn">
+          <img class="skills-card-img"
+            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" width="32" height="32"
+            loading="lazy" />
+
+          <p class="skills-card-name">MySQL</p>
+        </button>
+      </li>
+      <li>
+        <button class="skills-card tag-btn">
+          <img src="./css/images/redis.svg" class="skills-card-img" width="32" height="32" loading="lazy" alt="GIT" />
+
+          <p class="skills-card-name">Redis</p>
+        </button>
+      </li>
+
+      <li>
+        <button class="skills-card tag-btn">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" width="32" height="32"
+            loading="lazy" class="skills-card-img" />
+
+          <p class="skills-card-name">GIT</p>
+        </button>
+      </li>
+
+      <li>
+        <button class="skills-card tag-btn">
+          <img class="skills-card-img" src="./css/images//npm.svg" width="32" height="32" loading="lazy" alt="NPM" />
+
+          <p class="skills-card-name">NPM</p>
+        </button>
+      </li>
+
+      <li>
+        <button class="skills-card tag-btn">
+          <img class="skills-card-img"
+            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg" width="32" height="32"
+            loading="lazy" />
+
+          <p class="skills-card-name">VSCode</p>
+        </button>
+      </li>
+
+      <li>
+        <button class="skills-card tag-btn">
+          <img class="skills-card-img"
+            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg" width="32"
+            height="32" loading="lazy" />
+
+          <p class="skills-card-name">Bootstrap </p>
+        </button>
+      </li>
+      
+    </ul>
+
+    <!------------------------------------------ tools ------------>
+    <h2 class="heading" style="margin-top: 20px;"><i class='bx bx-tools'></i>Tools
+      <span>Used By Me!</span>
+    </h2>
+    <ul class="grid-list">
+      <li>
+        <button class="tools-card tag-btn">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/visualstudio/visualstudio-plain.svg" class="tools-card-img" width="32" height="32" loading="lazy" alt="Visual Studio Code" />
+          <p class="tools-card-name">Visual Studio Code</p>
+        </button>
+      </li>
+      
+
+      <li>
+        <button class="tools-card tag-btn">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" width="32" height="32" loading="lazy" class="tools-card-img" alt="Git" />
+          <p class="tools-card-name">Git</p>
+        </button>
+      </li>
+
+      <li>
+        <button class="tools-card tag-btn">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original-wordmark.svg" class="tools-card-img" width="32" height="32" loading="lazy" alt="MongoDB Compass" />
+          <p class="tools-card-name">MongoDB Compass</p>
+        </button>
+      </li>
+
+      <li>
+        <button class="tools-card tag-btn">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sqlite/sqlite-original.svg" class="tools-card-img" width="32" height="32" loading="lazy" alt="SQLite Browser" />
+          <p class="tools-card-name">SQLite Browser</p>
+        </button>
+      </li>
+
+      <li>
+        <button class="tools-card tag-btn">
+          <img src="https://tse2.mm.bing.net/th?id=OIP.1c8I9YReJGG12MnzFs5ndAHaGl&pid=Api&P=0&h=220" class="tools-card-img" width="32" height="32" loading="lazy" alt="Postman" />
+          <p class="tools-card-name">Postman</p>
+        </button>
+      </li>
+
+      <li>
+        <button class="tools-card tag-btn">
+          <img src="https://tse4.mm.bing.net/th?id=OIP.3EaYtjz6kSe4UgPgqxQEMAHaHa&pid=Api&P=0&h=220" class="tools-card-img" width="32" height="32" loading="lazy" alt="Netlify" />
+          <p class="tools-card-name">Netlify</p>
+        </button>
+      </li>
+
+      <li>
+        <button class="tools-card tag-btn">
+          <img src="https://tse2.mm.bing.net/th?id=OIP.QQi3dLIxiZmnnb8rbohSUAAAAA&pid=Api&P=0&h=220" class="tools-card-img" width="32" height="32" loading="lazy" alt="Render" />
+          <p class="tools-card-name">Render</p>
+        </button>
+      </li>
+
+      <li>
+        <button class="tools-card tag-btn">
+          <img src="https://app.cyclic.sh/summary_large_image.png" class="tools-card-img" width="32" height="32" loading="lazy" alt="Cyclic" />
+          <p class="tools-card-name">Cyclic</p>
+        </button>
+      </li>
+
+      <li>
+        <button class="tools-card tag-btn">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/slack/slack-original.svg" class="tools-card-img" width="32" height="32" loading="lazy" alt="Slack" />
+          <p class="tools-card-name">Slack</p>
+        </button>
+      </li>
+
+      <li>
+        <button class="tools-card tag-btn">
+          <img src="https://static.vecteezy.com/system/resources/previews/022/227/370/original/openai-chatgpt-logo-icon-free-png.png" class="tools-card-img" width="32" height="32" loading="lazy" alt="OpenAI GPT" />
+          <p class="tools-card-name">OpenAI GPT</p>
+        </button>
+      </li>
+    </ul>
+
+<!------------------------------------------------ tools end  ----------------------------------------------------->
+
+  </div>
+
+  <div class="skills-container">
+    <div class="skills-card-1">
+      <i class='bx bx-code-alt' class="skills-card-img"></i>
+      <h3 class="skills-card-name">Front-End Development</h3>
+      <p>HTML | CSS | JavaScript | React</p>
+      <a href="#about" class="button">Read More</a>
+    </div>
+    <div class="skills-card-1">
+      <i class='bx bxs-data' class="skills-card-img"></i>
+      <h3 class="skills-card-name">Back-End Development</h3>
+      <p>NodeJS | Express | MongoDB | MySQL</p>
+      <a href="#about" class="button">Read More</a>
+    </div>
+    <div class="skills-card-1">
+      <i class='bx bxl-codepen' class="skills-card-img"></i>
+      <h3 class="skills-card-name">Data Structure Algorithm</h3>
+      <p> LinkedList | Recursion | Binary </p>
+      <a href="#about" class="button">Read More</a>
+    </div>
+  </div>
+
+</section>
+
+  <!------------------------------------------ skills ends here------------>
+
+  <!------------------------------------------ github here------------>
+
+
+
+<!-- <div id="github-stats" >
+  <h2 class="heading">GitHub
+    <span class="span">Statistics</span>
+  </h2>
+  <div class="container gittextcome">
+
+    <div>
+      <div class="react-activity-calendar calendar">
+        Loading the data just for you.
       </div>
-    </section>
+     
 
-    <!------------------------------- Contact ---------------------------------------------->
+      <br />
+      <div class="stats">
+        <a href="https://github.com/8309h">
+          <img id="github-streak-stats"
+            src="https://github-readme-streak-stats.herokuapp.com/?user=8309h&theme=black-ice&hide_border=true&stroke=0000&background=060A0CD0"
+            alt="" />
+          <br />
+          <br />
 
-    <section id="contact" class="contact" class="nav-link contact" style="margin: auto;">
-      <div class="container">
-        <div class="form-header">
-          <h2 class="head-text">
-            Contact Me!<span class="underline underline-secondary"></span>
-          </h2>
-          <!-- <h2 class="text-secondary">Get In Touch</h2> -->
-          <!-- <p>
-            Want to connect with me, Youcan send me a message and
-            I'll reply as soon as I can.. Thank You.
-          </p> -->
-        </div>
-        <div class="form-container">
-          <div id="contact_info">
-            <div class="nav-link-contact">
+          <img id="github-stats-card"
+            src="https://github-readme-stats.vercel.app/api?username=8309h&show_icons=true&count_private=true&theme=react&hide_border=true&bg_color=0D1117" />
 
-              <p>Talent wins games, but teamwork and intelligence win championships.</p>
-              <!-- <p>Fill the form to connect with me </p> -->
+          <br />
+          <br />
 
-              <div class="list" style="font-size: 60%;">
-                <li><a href="#" id="user-detail-name">Harshal Kailas Wagh</a></li>
-                <li><a href="#" id="contact-phone">+91-9325038309</a></li>
-                <li><a href="www.gmail.com" id="contact-email"> harshalwagh201718@gmail.com </a>
-                </li>
-                <li><a href="https://www.linkedin.com/in/WaghHarshal/" id="contact-linkedin"> Linkedin : Harshal
-                    Wagh</a></li>
-                <!-- <li><a href="#">linkedin</a></li> -->
-              </div>
-              <div class="contact-icons">
-                <a id="contact-github" href="https://github.com/8309h" target="_blank"><i class='bx bxl-github'></i></a>
-                <!-- <a href="" target="_blank"><i class='bx bxl-whatsapp'></i></a> -->
-                <a id="contact-linkedin" href="https://www.linkedin.com/in/WaghHarshal/" target="_blank"><i
-                    class='bx bxl-linkedin'></i></a>
-                <!-- <a id="contact-instagram" href="https://www.instagram.com/harshal_k_wagh/" target="_blank"><i
-                    class='bx bxl-instagram'></i></a> -->
-                <!-- <a href="#"><i class='bx bxl-e'></i></a> -->
-
-              </div>
-
-
-            </div>
-          </div>
-
-          <div class="form-page">
-
-
-            <form action="https://formspree.io/f/xzblplqp" method="POST" data-netlify="true" class="form">
-              <div class="form-group group-bg">
-                <label for="Name">Name</label>
-
-                <input name="name" id="Name" placeholder="Enter Name" required>
-              </div>
-              <div class="form-group group-bg">
-                <label for="Name">Email</label>
-                <input type="email" id="Email" placeholder="Enter Email" name="email" required />
-              </div>
-              <!-- <div class="form-group group-bg">
-                  <label for="Subject">How can I reach you?(Linkedin username)</label>
-                  <input name="Message" id="Message" placeholder="Subject" name="message" />
-                </div> -->
-              <div class="form-group group-bg">
-                <label for="Message">Message</label>
-                <textarea name="Message" id="Message" placeholder="Message" name="message" required></textarea>
-              </div>
-              <div class="form-group">
-                <button type="submit" value="submit" class="btn">Submit</button>
-              </div>
-              <p id="my-form-status"></p>
-            </form>
-          </div>
-
-
-        </div>
-      </div>
-    </section>
-  </main>
-  <footer id="footer">
-    <div class="container">
-      <div class="footer-container">
-        <div class="social">
-          <div>
-            <a href="https://www.linkedin.com/in/WaghHarshal/">
-              <img src="https://img.shields.io/badge/LinkedIn-blue?style=for-the-badge&logo=linkedin&logoColor=white"
-                alt="LinkedIn Badge" />
-            </a>
-          </div>
-          <div>
-            <a href="https://github.com/8309h?tab=followers">
-              <img src="https://img.shields.io/github/followers/8309h?label=Followers&logo=GitHub&style=for-the-badge"
-                alt="GitHub badge" />
-            </a>
-          </div>
-        </div>
-        <p>Copyright &copy; Harshal Wagh, All rights reserved</p>
-        <a href="#home" class="btn-scroll-top" title="Home"><span class="fas fa-angle-up"></span></a>
+          <img
+            src="https://github-readme-stats.vercel.app/api/top-langs?username=8309h&show_icons=true&locale=en&layout=compact&theme=react&hide_border=true&bg_color=0D1117"
+            id="github-top-langs" />
+        </a>
       </div>
     </div>
-  </footer>
-  <script src="main.js"></script>
+  </div>
+</div> -->
+
+<div class="max-width nav-link github" id="github">
+  <div class="main-text">
+
+    <h2 class="heading"><i class='bx bx-code-alt'></i>GitHub
+      <span class="span">Statistics</span>
+    </h2>
+
+  </div>
+  <div id="stat">
+    <div>
+      <img class="ht1" id="github-stats-card"
+        src='https://github-readme-stats.vercel.app/api?username=8309h&count_private=true'>
+    </div>
+    <div>
+      <img class="ht1" id="github-top-langs"
+        src='https://github-readme-stats.vercel.app/api/top-langs/?username=8309h&theme=outrun'>
+    </div>
+    <div>
+      <img class="ht1" id="github-streak-stats"
+        src='https://github-readme-streak-stats.herokuapp.com?user=8309h&theme=radical&hide_border=true&border_radius=6.5&date_format=M%20j%5B%2C%20Y%5D'>
+    </div>
+
+    <!-- <div class="react-activity-calendar">
+        <img style="display: block; margin: auto; margin-top: 40px; width: 100%;"
+          src="https://ghchart.rshah.org/8309h" alt="Shahid77137's Github chart" />
+      </div> -->
+  </div>
+
+
+  <div id="calendar_harsh">
+    <div class="calendar react-activity-calendar" id="calendar">
+        Loading the data just for you.
+    </div>
+
+    <script src="https://unpkg.com/github-calendar@latest/dist/github-calendar.min.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/github-calendar@latest/dist/github-calendar-responsive.css" />
+
+    <script>
+        GitHubCalendar(".calendar", "8309h", {
+            responsive: true,
+            global_stats: true,
+            tooltips: true
+        });
+    </script>
+</div>
+
+</div>
+
+
+<!-------------------------------------------------- github Ends -------------------------------->
+
+
+
+
+<!----------------------------------- construct week projects---------------------------------- -->
+
+
+<section class="project" id="projects">
+  <h2 class="heading"><i class='bx bxl-codepen'></i>My
+    <span>Projects</span>
+  </h2>
+  <div class="project-container">
+     <div class="project-card">
+      <img src="./assets/projects/modesens.png"  alt="">
+      <div class="project-layer">
+        <h4 class="project-title">EasyShop</h4>
+        <p class="project-description"> This project is an is an online store that sells clothing and accessories. It's designed to provide a smooth shopping experience for users, where they can browse and purchase a wide variety of fashionable items.</p>
+        <h5 class="project-tech-stack">HTML | CSS | Vanilla JavaScript | Node | Express | MongoDB</h5>
+        <div class="projectlinks">
+          <a href="https://github.com/8309h/EasyShop" class="project-github-link"><i
+              class='bx bxl-github'></i></a>
+          <a href="https://theeasyshop.netlify.app/" class="project-deployed-link"><i
+              class='bx bxl-netlify'></i></a>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="project-card">
+      <img src="./assets/projects/mapi.png" alt="mapi.com" >
+      <div class="project-layer">
+        <h4 class="project-title">Mapi.com</h4>
+        <p class="project-description">This project where users can manage their work-related tasks on Mapi.com and view the results in a variety of formats, including cards, pie, graphs, and tables.  </p>
+        <h5 class="project-tech-stack">HTML | CSS | Vanilla JS | Python | Flask | MongoDB | Generative-Ai</h5>
+        <div class="projectlinks">
+          <a href="https://github.com/8309h/mapi.com" class="project-github-link"><i
+              class='bx bxl-github'></i></a>
+          <a href="https://mymapi.netlify.app/" class="project-deployed-link"><i
+              class='bx bxl-netlify'></i></a>
+        </div>
+
+      </div>
+    </div>
+  
+    <div class="project-card">
+      <img src="./assets/projects/time tracker.png" alt="">
+      <div class="project-layer">
+        <h4 class="project-title">Time Tracker</h4>
+        <p class="project-description"> Time tracker is the time managmnet website that track the time spend on particular task which is build from the scratch by the team of four developers in the time span of four days.
+        </p>
+        <h5 class="project-tech-stack">HTML | CSS | Vanilla JS | MongoDB | NodeJS | Express | Node-mailer | socketio</h5>
+        <div class="projectlinks">
+          <a href="https://github.com/Smoke221/truculent-trains-1017" class="project-github-link"><i
+              class='bx bxl-github'></i></a>
+          <a href="https://storied-paprenjak-8f2e60.netlify.app/" class="project-deployed-link"><i
+              class='bx bxl-netlify'></i></a>
+        </div>
+
+      </div>
+    </div>
+   
+    <!-- <div class="project-card">
+      <img src="https://i.ibb.co/xFHryg2/Screenshot-1492.png" alt="">
+      <div class="project-layer">
+        <h4 class="project-title">Chat Application</h4>
+        <p class="project-description">The WhatsApp Clone project is an exciting undertaking focused on developing a chat application that resembles the popular messaging platform, WhatsApp.</p>
+        <h5 class="project-tech-stack">HTML | CSS | Vanilla JS | NodeJs | Socket.io </h5>
+        <div class="projectlinks">
+          <a href="https://github.com/Bhavikagire/chatify.com" class="project-github-link"><i
+              class='bx bxl-github'></i></a>
+          <a href="https://friendly-frangollo-9ce165.netlify.app/" class="project-deployed-link"><i
+              class='bx bxl-netlify'></i></a>
+        </div>
+
+      </div>
+    </div> -->
+    <div class="project-card">
+      <img src="./assets/projects/speech-converter.png" alt="">
+      <div class="project-layer">
+        <h4 class="project-title">Speech Converter</h4>
+        <p class="project-description">This is the speech to text convertor app. whatever you say it is converted it into the text and allows you to copy paste at another place.
+        </p>
+        <h5 class="project-tech-stack">HTML | CSS | Vanilla JS | React | Vercel</h5>
+        <div class="projectlinks">
+          <a href="https://github.com/Bhavikagire/chatify.com" class="project-github-link"><i
+              class='bx bxl-github'></i></a>
+          <a href="https://friendly-frangollo-9ce165.netlify.app/" class="project-deployed-link"><i
+              class='bx bxl-netlify'></i></a>
+        </div>
+
+      </div>
+    </div>
+
+    
+  </div>
+
+  </div>
+   <!---------------------------------------------- construct week end project----------------------------------- -->
+
+  <h2 class="heading headingai">AI Based
+    <span>Projects</span>
+  </h2>
+
+
+  <div class="project-container">
+    <div class="project-card">
+     <img src="./assets/projects/Screenshot (195)2.png"  alt="Code converter app">
+     <div class="project-layer">
+       <h4 class="project-title"> CodeConverter</h4>
+       <p class="project-description"> web application for code conversion,
+        debugging, and quality-check feature, utilizing ChatGPT AI.</p>
+       <h5 class="project-tech-stack">HTML | CSS | Vanilla JavaScript | OpenAI | Node.js | Express.js</h5>
+       <div class="projectlinks">
+         <a href="https://github.com/8309h/CodeConvertor" class="project-github-link"><i
+             class='bx bxl-github'></i></a>
+         <a href="https://converthecode.netlify.app/" class="project-deployed-link"><i
+             class='bx bxl-netlify'></i></a>
+       </div>
+
+     </div>
+   </div>
+
+   <!-- <div class="project-card">
+     <img src="https://i.ibb.co/nBB9K6f/Screenshot-1673.png" alt="NutriCam" >
+     <div class="project-layer">
+       <h4 class="project-title">NutriCam</h4>
+       <p class="project-description">NutriCam: Instantly uncover the nutritional value and origin of any fruit using our cutting-edge machine learning technology.</p>
+       <h5 class="project-tech-stack">HTML | CSS | Vanilla JS</h5>
+       <div class="projectlinks">
+         <a href="https://github.com/Bhavikagire/clammy-move-5899" class="project-github-link"><i
+             class='bx bxl-github'></i></a>
+         <a href="https://statuesque-puppy-860369.netlify.app/" class="project-deployed-link"><i
+             class='bx bxl-netlify'></i></a>
+       </div>
+
+     </div>
+   </div>
+  -->
+   
+  
+  
+
+   
+ </div>
+</section>
+
+<!---------------- PROJECTS END here---------------------------------------------------------------> 
+
+
+
+
+<!------------------------------------------------- contact details-------------------------- -->
+
+<!-- <div id="contact" class="contact">
+  <h2 class="heading">Contact
+    <span>Me</span>
+  </h2>
+  <div class="contact_me">
+    <p id="contact-phone">Contact Number - +91 9425653035</p>
+    <p>
+    <p id="contact-email"> <a href="bhavikagire3035@gmail.com"></a>
+      Email Address-bhavikagire3035@gmail.com
+    </p>
+    </p>
+    <p>Address- post- Ukwa Dist- Balaghat, Madhyapradesh-481105</p>
+
+    <div >
+      <a style="color: rgb(20, 5, 63);" class="project-link linkdk" id="contact-linkedin" target="_blank"
+        href="https://www.linkedin.com/in/bhavika-gire-998077209"><i style="font-size: 40px"
+          class='bx bxl-linkedin' aria-hidden="true"></i></a>
+
+      <a style="color: rgb(20, 5, 63);" class="project-link linkd" id="contact-github" target="_blank" href="https://github.com/Bhavikagire"><i
+          style="font-size: 40px" class='bx bxl-github' aria-hidden="true"></i></a>
+
+          <a style="color: rgb(20, 5, 63);" class="project-link linkd" href="mailto:bhavikagire3035@gmail.com"><i style="font-size: 40px" class='bx bx-envelope' aria-hidden="true"></i></a>
+
+    </div>
+    
+  </div>
+  
+</div> -->
+<section id="contact" class="contact">
+  <h2 class="heading"><i class='bx bxs-contact'></i>Contact
+    <span>Me</span>
+  </h2>
+
+  <div id="contact_bigdiv">
+    <div class="contact_me">
+      <p id="contact-phone">Mo. Number: +91 9325038309</p>
+      <p id="contact-email">Email- harshalwagh201718@gmail.com</p>
+      <p>Address - post- Chincholi-pimpri Dist- Jalgaon, Maharashtra - 424209</p>
+  
+      <div>
+        <a style="color: rgb(20, 5, 63);" class="project-link linkdk" id="contact-linkedin" target="_blank"
+          href="https://www.linkedin.com/in/waghharshal"><i style="font-size: 40px"
+            class='bx bxl-linkedin' aria-hidden="true"></i></a>
+  
+        <a style="color: rgb(20, 5, 63);" class="project-link linkd" id="contact-github" target="_blank" href="https://github.com/8309h"><i
+            style="font-size: 40px" class='bx bxl-github' aria-hidden="true"></i></a>
+  
+        <a style="color: rgb(20, 5, 63);" class="project-link linkd" href="mailto:harshalwagh201718@gmail.com"><i style="font-size: 40px" class='bx bx-envelope' aria-hidden="true"></i></a>
+      </div>
+    </div>
+    <div id="svg-img"><img src="./assets/images/Software code testing.png" alt=""></div>
+
+  </div>
+  
+</section>
+
+ <!------------------------- contact end ---------------------------------------------->
+ <!-- ------------------------------------------  Footer start- ---------------------------------------------------------- -->
+
+
+<footer class="footer">
+  <div class="footer-text">
+
+    <p>Copyright &copy; Harshal Wagh, All rights reserved</p>  </div>
+  <div class="footer-iconTop">
+    <a href="#home"><i class='bx bx-up-arrow-alt'></i></a>
+  </div>
+</footer>
+ 
+ <!-- ------------------------------------------  Footer ends here ---------------------------------------------------------- -->
+<!-- script for scroll -->
+ <script src="https://unpkg.com/scrollreveal"></script>
+
+ <!-- Typed js here -->
+ <script src="https://unpkg.com/typed.js@2.0.132/dist/typed.umd.js"></script>
+
+ <!-- Main Script here -->
+ <script src="./js/script.js"></script>
 </body>
 
 </html>
-<script src="https://unpkg.com/typed.js@2.0.132/dist/typed.umd.js"></script>
-<script>
-  // -------------- auto type ------------------
-
-
-
-  const typed = new Typed('.auto-type', {
-    strings: ['Full Stack Web Developer', 'Backend Developer', 'Frontend Developer'],
-    typeSpeed: 100,
-    backSpeed: 100,
-    backdelay: 1000,
-    loop: true
-  })
-
-
-  var form = document.querySelector("form");
-
-  async function handleSubmit(event) {
-    event.preventDefault();
-    var status = document.getElementById("my-form-status");
-    var data = new FormData(event.target);
-    fetch(event.target.action, {
-      method: form.method,
-      body: data,
-      headers: {
-        'Accept': 'application/json'
-      }
-    }).then(response => {
-      if (response.ok) {
-        status.innerHTML = "Waiting....";
-        window.location.href = "./thankyou.html"
-        form.reset()
-      } else {
-        response.json().then(data => {
-          if (Object.hasOwn(data, 'errors')) {
-            status.innerHTML = data["errors"].map(error => error["message"]).join(", ")
-          } else {
-            status.innerHTML = "Oops! There was a problem submitting your form"
-          }
-        })
-      }
-    }).catch(error => {
-      status.innerHTML = "Oops! There was a problem submitting your form"
-    });
-  }
-  form.addEventListener("submit", handleSubmit)
-
-</script>
