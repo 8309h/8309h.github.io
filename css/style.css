@@ -23,7 +23,8 @@ body {
   --bg-wild-blue-yonder: #fff0ce;
   --bg-carolina-blue: #83b4b3;
   --bg-prussian-blue: hsla(216, 33%, 20%, 1);
-  --bg-oxford-blue: #0f4c5f;
+  /* --bg-oxford-blue: #0f4c5f; */
+  --bg-oxford-blue: #0e2b3e  ;
   --bg-oxford-blue-2: #232222;
   --bg-color: #d55534;
   --second-bg-color: #323946;
@@ -156,8 +157,8 @@ section {
   align-items: center;
 }
 .home-image {
-  border-radius: 100%;
-  width: 30%;
+  border-radius: 5%;
+  width: 35%;
   margin-left: 18%;
   background-color: var(--bg-prussian-blue);
 }
@@ -165,7 +166,7 @@ section {
   /* width: 35vw; */
   width: 100%;
   animation: floatImage 4s ease-in-out infinite;
-  border-radius: 50%;
+  border-radius: 5%;
 }
 @keyframes floatImage {
   0% {
