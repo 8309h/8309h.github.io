@@ -159,7 +159,7 @@ section {
 .home-image {
   border-radius: 5%;
   width: 35%;
-  margin-left: 18%;
+  margin-left: 15%;
   background-color: var(--bg-prussian-blue);
 }
 .home-image img {
@@ -863,18 +863,18 @@ span.text-muted {
     width: 50%;
   }
   .home-image{
-    border-radius: 100%;
+    border-radius: 5%;
     width: 70%;
-    /* margin-top: 5%; */
-    margin-left: 10%;
+    margin-top: 10%;
+    margin-left: 5%;
     background-color: var(--bg-prussian-blue);
     
   }
   .home-image img {
-    width: 65vw;
-    /* width: 100%; */
+    /* width: 65vw; */
+    width: 100%;
     animation: floatImage 4s ease-in-out infinite;
-    border-radius: 50%;
+    border-radius: 5%;
   }
   html {
     font-size: 50%;
