@@ -1,127 +1,162 @@
-// Resume Button 1 - Resume Section
-const resumeButton1 = document.getElementById("resume-button-1");
-resumeButton1.addEventListener("click", function() {
-  window.open("./resume/Harshal-Wagh-Resume.pdf", "_blank");
-});
-
-// Resume Button 2 - Home/About Section
-const resumeButton2 = document.getElementById("resume-button-2");
-resumeButton2.addEventListener("click", function() {
-  window.open("./resume/Harshal-Wagh-Resume.pdf", "_blank");
-});
-
-// GitHub Calendar
-const activityCalendar = document.querySelector(".react-activity-calendar");
-if (activityCalendar) {
-  // Include the necessary npm package and configuration for the calendar to display
-}
-
-// GitHub Streak Stats
-const streakStats = document.getElementById("github-streak-stats");
-if (streakStats) {
-  const streakStatsImg = document.createElement("img");
-  streakStatsImg.src = "https://github-readme-streak-stats.herokuapp.com/demo/";
-  streakStats.appendChild(streakStatsImg);
-}
-
-// GitHub Top Languages
-const topLangs = document.getElementById("github-top-langs");
-if (topLangs) {
-  const topLangsImg = document.createElement("img");
-  topLangsImg.src = "https://github.com/8309h/github-readme-stats";
-  topLangs.appendChild(topLangsImg);
-}
-
-// GitHub Stats Card
-const statsCard = document.getElementById("github-stats-card");
-if (statsCard) {
-  const statsCardImg = document.createElement("img");
-  statsCardImg.src = "https://github.com/8309h/github-readme-stats";
-  statsCard.appendChild(statsCardImg);
-}
-
-
-// *=============================== toggle icon navbar ==================================
-
+/* =================== Toggle Icon Navbar =================== */
 let menuIcon = document.querySelector('#menu-icon');
-let navbar = document.querySelector('#nav-menu')
+let navbar = document.querySelector('#nav-menu');
 
 menuIcon.onclick = () => {
-  menuIcon.classList.toggle('bx-x');
-  navbar.classList.toggle('active')
+    menuIcon.classList.toggle('bx-x');
+    navbar.classList.toggle('active');
 };
 
-// *=============================== github calender ==================================
-    GitHubCalendar(".calendar", "8309h");
-
-    // or enable responsive functionality:
-    GitHubCalendar(".calendar", "8309h", { responsive: true });
-
-// *=============================== resume open in new tab ==================================
-
-
-    let resume1 = document.getElementById("resume-button-1").addEventListener("click", NewTab)
-    let resume2 = document.getElementById("resume-button-2").addEventListener("click", NewTab)
-
-    function NewTab() {
-      window.open(
-        "https://drive.google.com/file/d/1zaKV0PMn3Zf79WhEMjPloyIMbvaWn_6R/view?usp=sharing",
-        "_blank"
-      );
-    }
-
-// *=============================== scroll sections active link ==================================
+/* =================== Scroll Sections Active Link =================== */
 let sections = document.querySelectorAll('section');
-let navlinks = document.querySelectorAll('header nav a')
+let navLinks = document.querySelectorAll('header nav a');
 
-window.onscroll = () => {
-  sections.forEach(sec => {
+window.addEventListener("scroll", () => {
     let top = window.scrollY;
-    let offset = sec.offsetTop - 150;
-    let height = sec.offsetHeight;
-    let id = sec.getAttribute('id');
 
-    if(top >= offset && top < offset + height) {
-        navlinks.forEach(links => {
-          links.classList.remove('active');
-          document.querySelector('header nav a[href*=' + id + ']').classList.add('active')
-        });
-    };
+    sections.forEach(sec => {
+        let offset = sec.offsetTop - 150;
+        let height = sec.offsetHeight;
+        let id = sec.getAttribute('id');
 
-  });
-  // *=============================== sticky navbar ==================================
-   
-  let header = document.querySelector('header');
+        if (top >= offset && top < offset + height) {
+            navLinks.forEach(link => link.classList.remove('active'));
 
-  header.classList.toggle('sticky', window.scrollY > 100);
+            let activeLink = document.querySelector(`header nav a[href*="${id}"]`);
+            if (activeLink) activeLink.classList.add('active');
+        }
+    });
 
-// *=============================== remove toggle icon and navbar when click navbar link(scroll) ==================================
+    /* Sticky Navbar */
+    document.querySelector('header').classList.toggle('sticky', top > 100);
 
-menuIcon.classList.remove('bx-x');
-navbar.classList.remove('active')
-
-};
-
-// *=============================== scroll reveal ==================================
-
-ScrollReveal({
-  // reset: true,
-  distance: '80px',
-  duration: 2000,
-  delay: 200
+    /* Auto-close mobile menu */
+    menuIcon.classList.remove('bx-x');
+    navbar.classList.remove('active');
 });
 
-ScrollReveal().reveal('.home-content, .heading', { origin:'top'});
-ScrollReveal().reveal('.home-img, .skills-container, .project-card, .contact form', { origin:'bottom'});
-ScrollReveal().reveal('.home-content h1', { origin:'left'});
-ScrollReveal().reveal('.home-content p, .about-content', { origin:'left'});
+/* =================== Scroll Reveal =================== */
+ScrollReveal({
+    distance: '80px',
+    duration: 2000,
+    delay: 200
+});
 
-// *===============================  typed js==================================
+ScrollReveal().reveal('.home-content, .heading', { origin: 'top' });
+ScrollReveal().reveal('.home-image, .skills-card, .project-card, .contact_me', { origin: 'bottom' });
+ScrollReveal().reveal('.home-content h1, .about-content img', { origin: 'left' });
+ScrollReveal().reveal('.home-content p, .about-content', { origin: 'right' });
 
+/* =================== Typed JS =================== */
 const typed = new Typed('.multiple-text', {
-  strings: ['Full Stack Web Developer', 'Backend Developer', 'Frontend Developer'],
-  typeSpeed: 100,
-  backSpeed: 100,
-  backdelay: 1000,
-  loop: true
-})
+    strings: ['Full Stack Developer', 'MERN Stack Developer', 'Backend Specialist', 'AI Enthusiast'],
+    typeSpeed: 100,
+    backSpeed: 60,
+    backDelay: 1000,
+    loop: true
+});
+
+/* =================== GitHub Calendar (Safely Loaded) =================== */
+if (window.GitHubCalendar) {
+    GitHubCalendar(".calendar", "8309h", {
+        responsive: true,
+        tooltips: true
+    });
+} else {
+    console.warn("GitHubCalendar script not found.");
+}
+
+/* =================== Resume Download Logging =================== */
+document.querySelectorAll('#resume-button-1, #resume-button-2, .resume a')
+    .forEach(btn => btn.addEventListener('click', () => console.log("Resume clicked")));
+
+/* =================== Section Visibility Observer =================== */
+const revealObserver = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) entry.target.classList.add('visible');
+    });
+}, { threshold: 0.2 });
+
+sections.forEach(sec => revealObserver.observe(sec));
+
+/* ============================
+   AI NEURAL NETWORK BACKGROUND
+   ============================ */
+window.addEventListener("load", () => {
+    const canvas = document.getElementById("neural-net-bg");
+    if (!canvas) return;
+
+    const ctx = canvas.getContext("2d");
+    let width, height, particles = [];
+
+    function resizeCanvas() {
+        width = canvas.width = window.innerWidth;
+        height = canvas.height = window.innerHeight;
+        initParticles();
+    }
+
+    window.addEventListener("resize", resizeCanvas);
+
+    function initParticles() {
+        const count = Math.floor((width + height) / 25);
+        particles = [];
+
+        for (let i = 0; i < count; i++) {
+            particles.push({
+                x: Math.random() * width,
+                y: Math.random() * height,
+                vx: (Math.random() - 0.5) * 0.4,
+                vy: (Math.random() - 0.5) * 0.4,
+                radius: Math.random() * 2 + 1
+            });
+        }
+    }
+
+    function updateParticles() {
+        particles.forEach(p => {
+            p.x += p.vx;
+            p.y += p.vy;
+
+            if (p.x < 0 || p.x > width) p.vx *= -1;
+            if (p.y < 0 || p.y > height) p.vy *= -1;
+        });
+    }
+
+    function drawNetwork() {
+        ctx.clearRect(0, 0, width, height);
+
+        // Draw dots
+        particles.forEach(p => {
+            ctx.beginPath();
+            ctx.arc(p.x, p.y, p.radius, 0, Math.PI * 2);
+            ctx.fillStyle = "rgba(0,255,200,0.8)";
+            ctx.shadowBlur = 12;
+            ctx.shadowColor = "#00ffc8";
+            ctx.fill();
+        });
+
+        // Draw connecting lines
+        for (let i = 0; i < particles.length; i++) {
+            for (let j = i + 1; j < particles.length; j++) {
+                const dx = particles[i].x - particles[j].x;
+                const dy = particles[i].y - particles[j].y;
+                const dist = Math.sqrt(dx * dx + dy * dy);
+
+                if (dist < 140) {
+                    ctx.beginPath();
+                    ctx.moveTo(particles[i].x, particles[i].y);
+                    ctx.lineTo(particles[j].x, particles[j].y);
+                    ctx.strokeStyle = `rgba(0,255,200, ${1 - dist / 140})`;
+                    ctx.lineWidth = 1;
+                    ctx.stroke();
+                }
+            }
+        }
+
+        updateParticles();
+        requestAnimationFrame(drawNetwork);
+    }
+
+    resizeCanvas();
+    drawNetwork();
+});
