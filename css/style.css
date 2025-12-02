@@ -561,7 +561,7 @@ section.visible {
 .project-card {
   border-radius: var(--radius-card);
   overflow: hidden;
-  background: var(--glass-bg);
+  background-color: #000e0f;
   border: 1px solid var(--glass-border);
   backdrop-filter: var(--glass-blur);
   box-shadow: var(--shadow-neon);
@@ -612,10 +612,10 @@ section.visible {
 }
 
 .project-description {
-  font-size: 1.45rem;
+  font-size: 1.90rem;
   line-height: 1.6;
   margin-bottom: 1.5rem;
-  color: var(--text-muted);
+  color: white;
 }
 
 .project-tech-stack {
@@ -1094,12 +1094,4 @@ section.visible {
     justify-content: center;
   }
  
-}
-.project-card {
-  background-color: #000e0f;
-}
-.project-description {
-  color: white;
-  font-size: large;
-
 }
