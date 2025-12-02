@@ -615,7 +615,7 @@ section.visible {
   font-size: 1.45rem;
   line-height: 1.6;
   margin-bottom: 1.5rem;
-  color: var(--text-muted);
+  color: var(--text-main)
 }
 
 .project-tech-stack {
