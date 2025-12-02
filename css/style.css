@@ -1095,3 +1095,11 @@ section.visible {
   }
  
 }
+.project-card {
+  background-color: #000e0f;
+}
+.project-description {
+  color: white;
+  font-size: large;
+
+}
