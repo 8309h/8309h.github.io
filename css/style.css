@@ -544,7 +544,7 @@ section.visible {
    ============================ */
 
 .project {
-  background: var(--bg-dark-);
+  background: var(--bg-dark-2);
   padding-top: 6rem;
 }
 
@@ -561,8 +561,7 @@ section.visible {
 .project-card {
   border-radius: var(--radius-card);
   overflow: hidden;
-  /* background: var(--glass-bg); */
-  background-color: #000e0f;
+  background: var(--glass-bg);
   border: 1px solid var(--glass-border);
   backdrop-filter: var(--glass-blur);
   box-shadow: var(--shadow-neon);
@@ -596,7 +595,6 @@ section.visible {
 .project-layer {
   padding: 2.2rem;
   background: linear-gradient(to bottom, rgba(0,12,14,0.45), rgba(0,12,14,0.95));
-  /* background-color: #000e0f; */
   color: var(--text-main);
 
   opacity: 1; /* always visible */
@@ -614,10 +612,10 @@ section.visible {
 }
 
 .project-description {
-  font-size: 1.65rem;
+  font-size: 1.45rem;
   line-height: 1.6;
   margin-bottom: 1.5rem;
-  color: var(--text-main);
+  color: var(--text-main)
 }
 
 .project-tech-stack {
