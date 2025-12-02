@@ -562,6 +562,7 @@ section.visible {
   border-radius: var(--radius-card);
   overflow: hidden;
   background-color: #000e0f;
+  background-color: var(--bg-dark-3);
   border: 1px solid var(--glass-border);
   backdrop-filter: var(--glass-blur);
   box-shadow: var(--shadow-neon);
@@ -612,7 +613,7 @@ section.visible {
 }
 
 .project-description {
-  font-size: 1.70rem;
+  font-size: 1.45rem;
   line-height: 1.6;
   margin-bottom: 1.5rem;
   color: white;
@@ -1094,4 +1095,12 @@ section.visible {
     justify-content: center;
   }
  
+}
+.project-card {
+  background-color: #000e0f;
+}
+.project-description {
+  color: white;
+  font-size: large;
+
 }
