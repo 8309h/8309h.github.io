@@ -1095,3 +1095,123 @@ section.visible {
   }
  
 }
+/* ==========================================================
+   MAIN GITHUB SECTION
+========================================================== */
+
+
+#github {
+  width: 100%;
+  margin-top: 4rem;
+  text-align: center;
+}
+
+/* Heading Style */
+#github .heading {
+  font-size: 4.4rem;
+  margin-bottom: 2.5rem;
+}
+
+/* ==========================================================
+   TOP 3 GITHUB CARDS (GRID)
+========================================================== */
+
+#stat {
+  width: 90%;
+  margin: 2rem auto 3rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.3rem;
+}
+
+/* ALL CARDS STYLING (shared) */
+.git-card1,
+.git-card2{
+  width: 90%;
+  height: 200px;
+  object-fit:cover;
+
+  border-radius: 16px;
+
+  /* NEON GLASS EFFECT */
+  background: rgba(0, 255, 255, 0.07);
+  border: 1px solid rgba(0, 255, 255, 0.25);
+  box-shadow: 0 0 25px rgba(0, 255, 255, 0.35);
+  backdrop-filter: blur(6px);
+}
+
+.git-card3  {
+   width: 90%;
+  height: 200px;
+  object-fit:contain;
+
+  border-radius: 16px;
+
+  /* NEON GLASS EFFECT */
+  background: rgba(0, 255, 255, 0.07);
+  border: 1px solid rgba(0, 255, 255, 0.25);
+  box-shadow: 0 0 25px rgba(0, 255, 255, 0.35);
+  backdrop-filter: blur(6px);
+
+}
+
+/* ==========================================================
+   GITHUB CALENDAR MINIMAL GLASS CARD
+========================================================== */
+
+#calendar_harsh {
+  width: 90%;
+  margin: 0 auto;
+  padding: 2rem;
+
+  border-radius: 18px;
+  background: rgba(40, 187, 187, 0.07);
+  border: 1px solid rgba(0, 255, 255, 0.25);
+  box-shadow: 0 0 35px rgba(0, 255, 255, 0.4);
+  backdrop-filter: blur(7px);
+}
+
+/* MAKE THE CALENDAR FIT PERFECTLY */
+.react-activity-calendar svg {
+  width: 100% !important;
+  height: auto !important;
+}
+
+/* Text color in calendar */
+#calendar text {
+  fill: #aefcff !important;
+}
+
+/* Round contribution squares */
+.react-activity-calendar rect {
+  rx: 2px;
+  ry: 2px;
+}
+
+/* ==========================================================
+   RESPONSIVE (MOBILE FRIENDLY)
+========================================================== */
+
+@media (max-width: 900px) {
+  #stat {
+    grid-template-columns: 1fr;
+    width: 90%;
+  }
+
+  .git-card1,
+  .git-card2,
+  .git-card3 {
+    height: auto;
+  }
+
+  #calendar_harsh {
+    width: 90%;
+    padding: 1.3rem;
+  }
+}
+
+@media (max-width: 600px) {
+  #github .heading {
+    font-size: 1.8rem;
+  }
+}

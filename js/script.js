@@ -49,7 +49,7 @@ ScrollReveal().reveal('.home-content p, .about-content', { origin: 'right' });
 
 /* =================== Typed JS =================== */
 const typed = new Typed('.multiple-text', {
-    strings: ['Full Stack Developer', 'MERN Stack Developer', 'Backend Specialist', 'AI Enthusiast'],
+    strings: ['Full Stack Developer', 'MERN Stack Developer', 'Backend Specialist', 'AI Enthusiast',"Backend Developer"],
     typeSpeed: 100,
     backSpeed: 60,
     backDelay: 1000,
@@ -60,11 +60,18 @@ const typed = new Typed('.multiple-text', {
 if (window.GitHubCalendar) {
     GitHubCalendar(".calendar", "8309h", {
         responsive: true,
-        tooltips: true
+        tooltips: true,
+        global_stats: true,
+        summary_text: "My GitHub Activity",
+        cache: 24,
+        month_labels: true,
+        week_labels: false,
+        svg_class: "github-calendar-svg"
     });
 } else {
     console.warn("GitHubCalendar script not found.");
 }
+
 
 /* =================== Resume Download Logging =================== */
 document.querySelectorAll('#resume-button-1, #resume-button-2, .resume a')
