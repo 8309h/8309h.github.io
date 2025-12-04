@@ -72,11 +72,6 @@ if (window.GitHubCalendar) {
     console.warn("GitHubCalendar script not found.");
 }
 
-
-/* =================== Resume Download Logging =================== */
-document.querySelectorAll('#resume-button-1, #resume-button-2, .resume a')
-    .forEach(btn => btn.addEventListener('click', () => console.log("Resume clicked")));
-
 /* =================== Section Visibility Observer =================== */
 const revealObserver = new IntersectionObserver(entries => {
     entries.forEach(entry => {
