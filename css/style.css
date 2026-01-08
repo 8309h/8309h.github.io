@@ -684,24 +684,24 @@ section.visible {
 
 #stat {
   width: 85%;
-  margin: 3% auto;
+  margin: 2% auto;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 1.4rem;
+  gap: 1.2rem;
   color: yellow;
 }
 
 #stat img {
-  width: 100%;
-  border-radius: var(--radius-card);
+  width:90%;
+  /* border-radius: var(--radius-card);
   background: rgba(0, 0, 0, 0.4);
-  box-shadow: var(--shadow-neon);
+  box-shadow: var(--shadow-neon); */
 }
 
-#github-top-langs {
+/* #github-top-langs {
   height: 160px;
   object-fit: cover;
-}
+} */
 
 #calendar_harsh {
   width: 85%;
