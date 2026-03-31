@@ -454,7 +454,7 @@
 
     </div>
     <div id="stat">
-<!-- 
+      <!-- 
       <img src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=8309h&theme=tokyonight"
         class="git-card11" />
 
@@ -465,38 +465,88 @@
       <img src="https://github-readme-streak-stats.herokuapp.com?user=8309h&theme=tokyonight_duo&hide_border=true"
         class="git-card3`" /> -->
 
-          <img
-            src="https://github-readme-stats-iota-rosy-37.vercel.app/api?username=8309h&show_icons=true&theme=dark&background=000000"
-            />
-          <img
-            src="https://github-readme-stats-iota-rosy-37.vercel.app/api/top-langs?username=8309h&layout=compact&theme=dark&background=000000"
-           />
-          <img src="https://streak-stats.demolab.com/?user=8309h&theme=dark" />
+      <img
+        src="https://github-readme-stats-iota-rosy-37.vercel.app/api?username=8309h&show_icons=true&theme=dark&background=000000" />
+      <img
+        src="https://github-readme-stats-iota-rosy-37.vercel.app/api/top-langs?username=8309h&layout=compact&theme=dark&background=000000" />
+      <img src="https://streak-stats.demolab.com/?user=8309h&theme=dark" />
 
     </div>
 
     <div id="calendar_harsh">
-      <div class="calendar react-activity-calendar" id="calendar">
+      <div class="calendar react-activity-calendar">
         Loading the data just for you.
       </div>
+    
+      <div class="stats">
+        <p>Total: <span id="total">0</span></p>
+        <p>Longest Streak: <span id="longest">0</span> days</p>
+        <p>Current Streak: <span id="current">0</span> days</p>
+      </div>
     </div>
-
-    <script src="https://unpkg.com/github-calendar@latest/dist/github-calendar.min.js"></script>
+    
     <link rel="stylesheet" href="https://unpkg.com/github-calendar@latest/dist/github-calendar-responsive.css" />
+    <script src="https://unpkg.com/github-calendar@latest/dist/github-calendar.min.js"></script>
 
-    <script>
-      document.addEventListener("DOMContentLoaded", function () {
-        if (window.GitHubCalendar) {
-          GitHubCalendar(".calendar", "8309h", {
-            responsive: true,
-            tooltips: true,
-            global_stats: true
-          });
-        } else {
-          console.warn("GitHubCalendar script failed to load.");
-        }
+
+   <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      if (!window.GitHubCalendar) return;
+
+      GitHubCalendar(".calendar", "8309h", {
+        responsive: true
       });
-    </script>
+
+      // Observe DOM changes (calendar loads async)
+      const observer = new MutationObserver(() => {
+        const days = document.querySelectorAll(
+          ".calendar [data-level]"
+        );
+
+        if (days.length === 0) return;
+
+        observer.disconnect();
+        calculateStats(days);
+      });
+
+      observer.observe(document.querySelector(".calendar"), {
+        childList: true,
+        subtree: true,
+      });
+
+      function calculateStats(days) {
+        let total = 0;
+        let longest = 0;
+        let current = 0;
+        let streak = 0;
+
+        days.forEach(day => {
+          const level = Number(day.getAttribute("data-level"));
+
+          // data-level: 0 = no contribution, >0 = contribution
+          if (level > 0) {
+            total++;
+            streak++;
+            longest = Math.max(longest, streak);
+          } else {
+            streak = 0;
+          }
+        });
+
+        // current streak (from last day)
+        for (let i = days.length - 1; i >= 0; i--) {
+          const level = Number(days[i].getAttribute("data-level"));
+          if (level > 0) current++;
+          else break;
+        }
+
+        document.getElementById("total").textContent = total;
+        document.getElementById("longest").textContent = longest;
+        document.getElementById("current").textContent = current;
+      }
+    });
+  </script>
+
 
   </div>
 
@@ -924,7 +974,7 @@
 </html>
 <script>
   function openAndDownloadResume() {
-    const fileID = "1WPl8ZZinnjeaKrT644CMGc0Ar_0SpUaL";
+    const fileID = "16TZV9RncfWdeeeOxxzxAXDs2fxE9WcYe";
 
     window.open(`https://drive.google.com/file/d/${fileID}/view?usp=sharing`, "_blank");
 
